@@ -1,5 +1,4 @@
-
-変換モジュールの設計
+変換モジュール
 ====================
 
 DODDLE-OWLによって構築される領域オントロジーは，階層関係とその他の関係から構成される．クラスのis-a階層は，OWLが提供するowl:Classクラスおよびrdfs:subClassOfプロパティにより定義する．クラスのhas-a階層は，owl:Classクラスおよびdoddle:partOfプロパティにより定義する．プロパティのis-a 階層は，owl:ObjectProperty クラスおよびrdfs:subPropertyOfプロパティにより定義する．プロパティのhas-a階層は，owl:ObjectPropertyクラスおよびdoddle:partOf プロパティにより定義する．その他の関係は，概念対の間の関係をOWLにおけるプロパティ，概念対をプロパティの定義域および値域としてとらえ，OWLが提供するowl:ObjectProperty クラス，rdfs:domain およびrdfs:range プロパティにより定義する．
