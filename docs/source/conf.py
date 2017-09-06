@@ -54,8 +54,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'doddle-owl'
-copyright = u'2016, Takeshi Morita'
+project = u'DODDLE-OWL'
+copyright = u'2016-2017, Takeshi Morita'
 author = u'Takeshi Morita'
 
 # The version info for the project you're documenting, acts as replacement for

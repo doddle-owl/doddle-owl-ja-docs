@@ -1,5 +1,6 @@
+===============
 インストール
-============
+===============
 
 .. contents:: コンテンツ 
    :depth: 3
@@ -135,7 +136,7 @@ DODDLE-OWLは，以下のソフトウェアを利用しています．以下の�
 インストール
 ------------
 
-`ダウンロードページ <http://doddle-owl.org/ja/download.html>`_ からDODDLE-xxx.zipファイルを解凍し，適当なフォルダ（以下，インストールフォルダ）にコピーすればインストール完了です．
+`ダウンロードページ <http://doddle-owl.org/download-ja.html>`_ からDODDLE-xxx.zipファイルを解凍し，適当なフォルダ（以下，インストールフォルダ）にコピーすればインストール完了です．
 
 ファイル構成
 ~~~~~~~~~~~~
@@ -272,7 +273,7 @@ EDR一般辞書
 ~~~~~~~~~~~
 
 1. CPC.DIC, CPH.DIC, CPT.DIC, EWD.DIC, JWD.DICを任意のフォルダにコピーする．(例：C:/EDR_Text)．
-2. DODDLE-OWLをインストールしたフォルダにある，DODDLE_DIC_Converter.batを実行する．図1のウィンドウが表示される．
+2. DODDLE-OWLをインストールしたフォルダにある，DODDLE_DIC_Converter.batを実行する．:numref:`doddle_dic_converter` のウィンドウが表示される．
 3. 「Dictionary Type」として「EDR」を，「Convertion Type」として「Text」を選択する．
 4. 「Browse」ボタンを押して，Input Dictionary PathにEDR一般辞書のテキストデータが保存されたフォルダを設定する．Output Dictionary Pathに，DODDLE-OWLが参照する変換後のEDR一般辞書データを保存するフォルダを設定する．
 5. 「Convert」ボタンを押すと，concept.data, relation.data, tree.data, word.data, concept.index, relation.index, tree.index, word.indexファイルが設定したEDR_HOMEに保存される.
@@ -283,7 +284,7 @@ EDR専門辞書
 ~~~~~~~~~~~
 
 1. TCPC.DIC, TCPH.DIC, TEWD.DIC, TJWD.DICを任意のフォルダにコピーする．(例： C:/EDRT_Text/).
-2. DODDLE-OWLをインストールしたフォルダにある，DODDLE_DIC_Converter.batを実行する．図1のウィンドウが表示される．
+2. DODDLE-OWLをインストールしたフォルダにある，DODDLE_DIC_Converter.batを実行する．:numref:`doddle_dic_converter` のウィンドウが表示される．
 3. 「Dictionary Type」として「EDRT」を，「Convertion Type」として「Text」を選択する．
 4. 「Browse」ボタンを押して，Input Dictionary PathにEDR専門辞書のテキストデータが保存されたフォルダを設定する．Output Dictionary PathにDODDLE-OWLが参照する変換後のEDR専門辞書のデータを保存するフォルダを設定する．
 5. 「Convert」ボタンを押すと，concept.data, tree.data, word.data, concept.index, tree.index, word.indexファイルが設定したフォルダに保存される．
