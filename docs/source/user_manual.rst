@@ -185,7 +185,7 @@ SPARQL テンプレートを用いたオントロジー要素抽出
 
 
 .. _ontology-selection-panel:
-.. figure:: figures/ontology-selection-panel.png
+.. figure:: figures/ontology-selection-panel.svg
    :scale: 80 %
    :alt: 汎用オントロジー選択パネル
    :align: center
@@ -198,7 +198,7 @@ OWLオントロジー選択パネル
 :numref:`owl-ontology-selection-panel` にOWL オントロジー選択パネルを示す．:numref:`owl-ontology-selection-panel` (1) の「追加（ファイル）」または「追加(URI)」ボタンにより，参照オントロジーとする既存OWLオントロジーを選択する．:numref:`owl-ontology-selection-panel` (3) には，:numref:`owl-ontology-selection-panel` (1) のオントロジーリスト中で選択したオントロジーのOWLメタデータが表示される．また，:numref:`owl-ontology-selection-panel` (2) において，OWLオントロジー中から抽出する要素を決定するためのSPARQL テンプレートを指定する．SPARQL テンプレートの種類として，SPARQL テンプレートを用いたオントロジー要素抽出で述べた5 種類が利用できる．
 
 .. _owl-ontology-selection-panel:
-.. figure:: figures/owl-ontology-selection-panel.png
+.. figure:: figures/owl-ontology-selection-panel.svg
    :scale: 80 %
    :alt: OWLオントロジー選択パネル
    :align: center
@@ -211,7 +211,7 @@ OWLオントロジー選択パネル
 :numref:`input-document-selection-panel` に入力文書選択パネルを示す．入力文書選択パネルでは，領域に関連する英語または日本語で記述された文書を選択する．入力文書選択パネルでは，Apache POIとApache PDFBoxを用いて，様々な形式（Word, Excel, PowerPoint, PDF など）のファイルからテキストデータを抽出できる．単語を抽出する際には，抽出する単語の品詞を指定できるようにしている．名詞，動詞，その他の品詞，複合語のいずれかを抽出したり，1 文字だけの領域オントロジー構築に不要となる語を除去することができる．以下に :numref:`input-document-selection-panel` の各部分について説明する．
 
 .. _input-document-selection-panel:
-.. figure:: figures/input-document-selection-panel.png
+.. figure:: figures/input-document-selection-panel.svg
    :scale: 80 %
    :alt: 入力文書選択パネル
    :align: center
@@ -234,7 +234,7 @@ OWLオントロジー選択パネル
 入力文書ビューアでは，入力文書の内容を見ながらユーザは入力語の選択を行うことができる．:numref:`input-document-viewer` に入力文書ビューアのスクリーンショットを示す．以下では，入力文書ビューアの各部分について説明する．
 
 .. _input-document-viewer:
-.. figure:: figures/input-document-viewer.png
+.. figure:: figures/input-document-viewer.svg
    :scale: 80 %
    :alt: 入力文書ビューア
    :align: center
@@ -254,7 +254,7 @@ OWLオントロジー選択パネル
 入力語情報テーブルでは，入力文書から自動抽出された語から入力語を選択することができる．:numref:`input-term-table` に入力語情報テーブルのスクリーンショットを示す．以下では，入力語情報テーブルの各部分について説明する．
 
 .. _input-term-table:
-.. figure:: figures/input-term-table.png
+.. figure:: figures/input-term-table.svg
    :scale: 80 %
    :alt: 入力語情報テーブル
    :align: center
@@ -275,7 +275,7 @@ OWLオントロジー選択パネル
 
 
 .. _removed-term-table:
-.. figure:: figures/removed-term-table.png
+.. figure:: figures/removed-term-table.svg
    :scale: 80 %
    :alt: 削除語情報テーブル
    :align: center
@@ -288,7 +288,7 @@ OWLオントロジー選択パネル
 
 
 .. _input-concept-selection-panel:
-.. figure:: figures/input-concept-selection-panel.png
+.. figure:: figures/input-concept-selection-panel.svg
    :scale: 80 %
    :alt: 入力概念選択パネル
    :align: center
@@ -316,7 +316,7 @@ OWLオントロジー選択パネル
 
 
 .. _input-concept-selection-panel-term-list:
-.. figure:: figures/input-concept-selection-panel-term-list.png
+.. figure:: figures/input-concept-selection-panel-term-list.svg
    :scale: 80 %
    :alt: 入力概念選択パネル: 用語リスト
    :align: center
@@ -344,7 +344,7 @@ OWLオントロジー選択パネル
 
 
 .. _input-concept-selection-panel-concept-list:
-.. figure:: figures/input-concept-selection-panel-concept-list.png
+.. figure:: figures/input-concept-selection-panel-concept-list.svg
    :scale: 80 %
    :alt: 入力概念選択パネル: 概念リスト
    :align: center
@@ -360,7 +360,7 @@ OWLオントロジー選択パネル
 
 
 .. _input-concept-selection-panel-concept-info:
-.. figure:: figures/input-concept-selection-panel-concept-info.png
+.. figure:: figures/input-concept-selection-panel-concept-info.svg
    :scale: 80 %
    :alt: 入力概念選択パネル: 概念情報
    :align: center
@@ -378,7 +378,7 @@ OWLオントロジー選択パネル
 :numref:`input-concept-selection-panel-construct-concept-tree-option` は :numref:`input-concept-selection-panel` (7)「階層構築オプション」を拡大した図である．
 
 .. _input-concept-selection-panel-construct-concept-tree-option:
-.. figure:: figures/input-concept-selection-construct-concept-tree-option.png
+.. figure:: figures/input-concept-selection-panel-construct-concept-tree-option.svg
    :scale: 80 %
    :alt: 入力概念選択パネル: 階層構築オプション
    :align: center
@@ -402,7 +402,7 @@ OWLオントロジー選択パネル
 :numref:`construct-class-tree-panel` にクラス階層構築パネルを示す．
 
 .. _construct-class-tree-panel:
-.. figure:: figures/construct-class-tree-panel.png
+.. figure:: figures/construct-class-tree-panel.svg
    :scale: 80 %
    :alt: クラス階層構築パネル
    :align: center
@@ -427,7 +427,7 @@ OWLオントロジー選択パネル
 :numref:`construct-class-tree-panel-concept-info` は :numref:`construct-class-tree-panel` 2. 概念情報パネルを拡大した図である．
 
 .. _construct-class-tree-panel-concept-info:
-.. figure:: figures/construct-class-tree-panel-concept-info.png
+.. figure:: figures/construct-class-tree-panel-concept-info.svg
    :scale: 80 %
    :alt: クラス階層構築パネル: 概念情報パネル
    :align: center
@@ -447,7 +447,7 @@ Is-a 階層およびHas-a 階層パネル
 :numref:`construct-class-tree-panel-isa-hasa-tree-panel` は :numref:`construct-class-tree-panel` (3) を拡大した図である．:numref:`construct-class-tree-panel-isa-hasa-tree-panel` の左側がIs-a 階層パネルを右側がHas-a階層パネルを示している．
 
 .. _construct-class-tree-panel-isa-hasa-tree-panel:
-.. figure:: figures/construct-class-tree-panel-isa-hasa-tree-panel.png
+.. figure:: figures/construct-class-tree-panel-isa-hasa-tree-panel.svg
    :scale: 80 %
    :alt: クラス階層構築パネル: Is-a階層パネルとHas-a階層パネル
    :align: center
@@ -459,7 +459,7 @@ Is-a 階層およびHas-a 階層パネル
 #. Is-a 階層とHas-a 階層を表示・編集するためのパネル．(2) のツールバーまたは概念を選択して，マウスを右クリックすることで表示されるポップアップメニューから，概念の追加，削除などを行うことができる．
 
 .. _construct-class-tree-panel-popup-menu:
-.. figure:: figures/construct-class-tree-panel-popup-menu.png
+.. figure:: figures/construct-class-tree-panel-popup-menu.svg
    :scale: 80 %
    :alt: クラス階層構築パネル: ポップアップメニュー
    :align: center
@@ -471,7 +471,7 @@ Is-a 階層およびHas-a 階層パネル
 DODDLE-OWLにおける概念の削除は3 種類ある．「概念の削除」は削除対象のノードと同一URI を持つノードおよびその下位ノードをすべて削除する．「上位概念へのリンクを削除」は，多重継承している場合に削除対象のノードとその上位ノードの間の関係を削除する．「中間概念の削除」は，削除対象のノードを削除し，その下位ノードを削除対象のノードの上位ノードの下位ノードとして定義する．
 
 .. _construct-class-tree-panel-node-icon:
-.. figure:: figures/construct-class-tree-panel-node-icon.png
+.. figure:: figures/construct-class-tree-panel-node-icon.svg
    :scale: 80 %
    :alt: クラス階層構築パネル: ノードのアイコン
    :align: center
@@ -485,7 +485,7 @@ DODDLE-OWLにおける概念の削除は3 種類ある．「概念の削除」�
 :numref:`construct-class-tree-panel-concept-drift-management-panel` は :numref:`construct-class-tree-panel` (4) 概念変動管理パネルの各タブを展開し，拡大した図である．
 
 .. _construct-class-tree-panel-concept-drift-management-panel:
-.. figure:: figures/construct-class-tree-concept-drift-management-panel.png
+.. figure:: figures/construct-class-tree-panel-concept-drift-management-panel.svg
    :scale: 80 %
    :alt: クラス階層構築パネル: 概念変動管理パネル
    :align: center
@@ -503,7 +503,7 @@ DODDLE-OWLにおける概念の削除は3 種類ある．「概念の削除」�
 :numref:`construct-property-tree-panel` にプロパティ階層構築パネルを示す．
 
 .. _construct-property-tree-panel:
-.. figure:: figures/construct-property-tree-panel.png
+.. figure:: figures/construct-property-tree-panel.svg
    :scale: 80 %
    :alt: プロパティ階層構築パネル
    :align: center
@@ -513,7 +513,7 @@ DODDLE-OWLにおける概念の削除は3 種類ある．「概念の削除」�
 プロパティ階層構築パネルの構成要素の大部分は，クラス階層構築パネルと同様である．異なる点は， :numref:`construct-property-tree-panel` (1) の概念定義パネルがある点である．概念定義パネルは，汎用オントロジーとしてEDR 一般辞書を指定し，プロパティ階層を構築した場合，EDR 概念記述辞書における，agent およびobject の関係にある概念を定義域および値域として自動的に定義している．また，クラス階層を参照し，定義域および値域の追加を行うことも可能である．
 
 .. _construct-property-tree-panel-node-icon:
-.. figure:: figures/construct-property-tree-panel-node-icon.png
+.. figure:: figures/construct-property-tree-panel-node-icon.svg
    :scale: 80 %
    :alt: プロパティ階層構築パネル: ノードのアイコン
    :align: center
@@ -527,7 +527,7 @@ DODDLE-OWLにおける概念の削除は3 種類ある．「概念の削除」�
 :numref:`construct-relationship-panel` に，関係構築パネルのスクリーンショットを示す．
 
 .. _construct-relationship-panel:
-.. figure:: figures/construct-relationship-panel.png
+.. figure:: figures/construct-relationship-panel.svg
    :scale: 80 %
    :alt: 関係構築パネル
    :align: center

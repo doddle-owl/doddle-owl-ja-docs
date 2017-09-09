@@ -109,7 +109,7 @@ Swoogle では，現状ではRDFS, DAML, OWLが提供している基本的なク
 
 Swoogle が扱う範囲のクラスやプロパティのみをOWL オントロジーから抽出する場合には，Swoogle の定義に従ってオントロジーの要素を抽出すればよい．しかし，それ以外の形式で定義された汎用オントロジーやシソーラスが存在する．[Koide06]_ ではWordNetやEDR のOWL化について検討しており，それらはSwoogle で定義しているクラスやプロパティとは構造が異なっている．:numref:`label_extraction` にOWL 基本語彙，SKOS (Simple Knowledge Organisation System) [Miles05]_ ，WordNet RDF/OWLにおける“概念の見出し” の表現方法を示す． [Nakayama06]_ では，Wikipedia に対してWeb マイニングを行う手法であるWikipedia マイニングを提案し，シソーラス辞書を構築している (wikipedia-lab ) ．構築されたWikipedia シソーラスを表現するための語彙としてSKOS を用いている．SKOS では，概念を表すクラスとしてskos:Concept，上位概念を表すプロパティとしてskos:broader などの語彙が定義されており，OWL基本語彙とは異なっている．表1 にOWL基本語彙，SKOS, WordNet RDF/OWLにおけるオントロジーの要素を特定するクラスおよびプロパティ一覧を示す．
 
-DODDLE-OWLでは，多用な形式のオントロジーからオントロジーの要素を抽出するために，クラス抽出テンプレート，プロパティ抽出テンプレート，見出しと説明抽出テンプレート，階層関係抽出テンプレート，その他の関係抽出テンプレートの5 種類のテンプレートをRDF クエリー言語SPARQL[hommeaux08]_ を用いて記述し，OWL オントロジーと対応づけている．
+DODDLE-OWLでは，多用な形式のオントロジーからオントロジーの要素を抽出するために，クラス抽出テンプレート，プロパティ抽出テンプレート，見出しと説明抽出テンプレート，階層関係抽出テンプレート，その他の関係抽出テンプレートの5 種類のテンプレートをRDF クエリー言語SPARQL [hommeaux08]_ を用いて記述し，OWL オントロジーと対応づけている．
 
 .. _label_extraction:
 .. figure:: figures/label_extraction.png
