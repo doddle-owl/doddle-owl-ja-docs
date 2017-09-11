@@ -11,7 +11,7 @@
 =============================
 :numref:`implementation_architecture` にDODDLE-OWLの実装アーキテクチャを示す．DODDLE-OWLは，GUI コンポーネントとしてJava Swing を用いて，Java 言語で実装した．DODDLE-OWL は，オントロジー選択モジュール，入力モジュール，オントロジー構築・洗練モジュール，視覚化モジュール，変換モジュールから構成される．実装上は，オントロジー構築およびオントロジー洗練は，同一パネル上で操作できるようにしている．
 
-Web 上の既存オントロジーを獲得するために，オントロジー選択モジュールではSwoogleWeb サービスを利用している．入力モジュール，オントロジー構築・洗練モジュールでは，WordNet を参照するために `extJWNL(Extended Java WordNet Library)  <http://extjwnl.sourceforge.net/Java>`_ を利用している．入力モジュールでは，日本語の形態素解析および品詞同定を行うために，日本語形態素解析器 `lucene-gosen <https://github.com/lucene-gosen/lucene-gosen>`_ を用いている．英語の品詞同定を行うために `The Stanford Parser <https://nlp.stanford.edu/software/lex-parser.shtml>`_ を用いている．英語および日本語の複合語を抽出するために専門用語自動抽出システム言選 [Nakagawa03]_ を用いている．日本語の複合語抽出には，言選以外に日本語係り受け解析器 `CaboCha <http://taku910.github.io/cabocha/>`_ を用いることもできる． `Apache POI <http://poi.apache.org>`_ と `Apache PDFBox <https://pdfbox.apache.org>`_ を利用することにより，テキスト文書のみでなく，PDF，Microsoft Word, Excel, PowerPoint など様々な形式のファイルからテキストを抽出することができる．視覚化モジュールには |MR3| <http://mrcube.org>を用いている．変換モジュールでは，OWL形式のオントロジーのインポートおよびエクスポートを支援するために， `Apache Jena <http://jena.apache.org>`_ を用いている． 
+Web 上の既存オントロジーを獲得するために，オントロジー選択モジュールではSwoogle Web サービスを利用している．入力モジュール，オントロジー構築・洗練モジュールでは，WordNet を参照するために `extJWNL(Extended Java WordNet Library)  <http://extjwnl.sourceforge.net/Java>`_ を利用している．入力モジュールでは，日本語の形態素解析および品詞同定を行うために，日本語形態素解析器 `lucene-gosen <https://github.com/lucene-gosen/lucene-gosen>`_ を用いている．英語の品詞同定を行うために `The Stanford Parser <https://nlp.stanford.edu/software/lex-parser.shtml>`_ を用いている．英語および日本語の複合語を抽出するために専門用語自動抽出システム言選 [Nakagawa03]_ を用いている．日本語の複合語抽出には，言選以外に日本語係り受け解析器 `CaboCha <http://taku910.github.io/cabocha/>`_ を用いることもできる． `Apache POI <http://poi.apache.org>`_ と `Apache PDFBox <https://pdfbox.apache.org>`_ を利用することにより，テキスト文書のみでなく，PDF，Microsoft Word, Excel, PowerPoint など様々な形式のファイルからテキストを抽出することができる．視覚化モジュールには |MR3| <http://mrcube.org>を用いている．変換モジュールでは，OWL形式のオントロジーのインポートおよびエクスポートを支援するために， `Apache Jena <http://jena.apache.org>`_ を用いている． 
 
 .. _implementation_architecture:
 .. figure:: figures/implementation-architecture-of-doddle-owl.svg
@@ -490,7 +490,7 @@ DODDLE-OWLにおける概念の削除は3 種類ある．「概念の削除」�
 :numref:`construct-property-tree-panel` にプロパティ階層構築パネルを示す．
 
 .. _construct-property-tree-panel:
-.. figure:: figures/construct-property-tree-panel.svg
+.. figure:: figures/construct-property-tree-panel.png
    :scale: 80 %
    :alt: プロパティ階層構築パネル
    :align: center
@@ -621,3 +621,106 @@ perl.exe
    オプションダイアログ：表示
 
 
+メニュー
+===================
+
+ファイルメニュー
+----------------------
+
+* 新規プロジェクト
+
+  * 新規にDODDLE-OWLプロジェクトを作成する
+
+* プロジェクトを開く
+
+  * DODDLE-OWLのプロジェクトフォルダまたはプロジェクトファイルを開く
+
+* 最近のプロジェクトを開く
+* 開く->入力語リストを開く
+* 開く->入力語テーブルを開く
+* 開く->概念記述を開く
+* 開く->入力概念選択結果を開く
+* 開く->入力語と概念の対応を開く
+* 開く->OWLオントロジーを開く
+* 開く->FreeMindオントロジーを開く
+* 概念と優先見出しの対応を開く
+* プロジェクトを上書き保存
+* プロジェクトを名前を付けて保存
+
+  * DODDLE-OWLのプロジェクトを名前をつけて保存する．処理途中の中間結果ファイルを確認したい場合にはファイル形式としてDODDLEプロジェクトフォルダを選択する．一つのファイルにまとめて保存したい場合には，DODDLEプロジェクトファイル(.ddl)を選択する．
+
+* 保存->入力語リストを保存
+* 保存->入力語テーブルを保存
+* 保存->概念記述を保存
+* 保存->入力概念選択結果を保存
+* 保存->入力語と概念の対応を保存
+* 保存->OWLオントロジーを保存
+* 保存->FreeMindオントロジーを保存
+* 概念と優先見出しの対応を保存
+
+* 終了
+
+  * DODDLE-OWLを終了する
+
+ツールメニュー
+-----------------------
+* すべての用語を表示
+* 自動入力概念選択
+
+  * 入力語集合から自動的に入力語に対応する汎用オントロジー中の概念をランキングする．入力概念選択パネル中で入力語を選択した際に，ランキング順に対応する概念を表示する．
+
+* クラス階層構築
+* クラス及びプロパティ階層構築
+* DODDLE Dic Converter
+
+  * EDR電子化辞書と日本語WordNetの辞書ファイルををDODDLE-OWLで利用可能な形式に変換するためのダイアログを表示する．
+
+* ログコンソールを表示
+
+  * 標準出力と標準エラー出力を画面上に表示する．
+
+* XGAレイアウト
+
+  * 1024x768の解像度に合わせてウィンドウをレイアウトする．
+
+* UXGAレイアウト    
+
+  * 1600 x 1200の解像度に合わせてウィンドウをレイアウトする．
+
+* オプションダイアログを表示
+
+プロジェクトメニュー
+------------------------
+* 開いているプロジェクトをサブメニューとして表示し，切り替えることができる．
+
+ヘルプメニュー
+----------------------------
+* バージョン
+  
+  * バージョン番号や利用ライブラリなどを確認するためのダイアログを表示する．
+
+ショートカットキー
+==============================
+* Ctrl-N
+
+  * 新規プロジェクト
+* Ctrl-O
+
+  * プロジェクトを開く
+
+* Ctrl-S
+
+  * プロジェクトを上書き保存
+
+* Ctrl-Shift-S
+
+  * プロジェクトを名前を付けて保存
+
+* Ctrl-Q
+
+  * 終了
+
+* F1
+
+  * バージョンダイアログを表示
+  
