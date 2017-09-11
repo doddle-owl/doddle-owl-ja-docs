@@ -5,6 +5,7 @@ DODDLE-OWL ドキュメント
 .. toctree::
    :caption: ユーザドキュメント
 
+   about
    install
    modules
    user_manual
