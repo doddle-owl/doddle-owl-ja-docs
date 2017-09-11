@@ -10,7 +10,7 @@
 DODDLE-OWLを実行するためには，以下の環境が必要です．
 
 * JRE (Java Runtime Environment) 8以降
-* OS: Javaが動作可能なOS（推奨 Windows XP）
+* OS: Javaが動作可能なOS
 * CPU: Pentium4 2GHz程度
 * メモリ: 1GB以上
 * ハードディスクの空き容量: 1GB以上
@@ -19,9 +19,9 @@ DODDLE-OWLを実行するためには，以下の環境が必要です．
 DODDLE-OWLの開発および動作確認は以下の環境で行っています．
 
 * JDK 8 
-* OS: Windows XP
-* CPU: Pentium4 3.4GHz
-* メモリ: 2GB
+* OS: macOS Sierra
+* CPU: Intel Core i7 4GHz
+* メモリ: 32GB
 * ディスプレイ: 解像度1920×1200 のカラーディスプレイ
 
 利用しているライブラリ
@@ -129,31 +129,6 @@ DODDLE-OWLは，以下のソフトウェアを利用しています．以下の�
 ========================================
 インストールフォルダを削除すればアンインストール完了です．
 
-ファイル構成
-==================================
-DODDLE/DODDLE.bat
-    Windows用の実行ファイル
-DODDLE/DODDLE_DIC_Converter.bat
-    EDRのテキスト形式の辞書データや日本語WordNetのsqlite3 databaseをDODDLEで参照する辞書の形式に変換するプログラムを実行するファイル
-DODDLE/build.xml
-    antビルドファイル
-DODDLE/src.zip
-    DODDLE-OWLのソースファイル群をzip形式で圧縮したファイル
-DODDLE/docs.zip
-    DODDLE-OWLのjavadocをzip形式で圧縮したファイル
-DODDLE/build/DODDLE.jar
-    DODDLE-OWLに関連するクラスファイルをjar形式でまとめたファイル
-DODDLE/build/classes/
-    DODDLE-OWLに関連するクラスファイル群を格納するディレクトリ
-DODDLE/build/lib/
-    DODDLE-OWLが利用するライブラリ群を格納するディレクトリ
-DODDLE/ontology_templates/
-    OWL要素を抽出する際に利用するSPARQLで記述されたテンプレートファイル群
-DODDLE/stop_word_list.txt
-    単語抽出時に無視する単語を保存したファイル
-DODDLE/resources/DODDLEComponent.owl
-    DODDLE-OWLのユーザインタフェースで使用している語彙を管理するOWLオントロジー
-
 実行方法
 =====================
 DODDLE-OWL.exeまたはDODDLE-OWL.appファイルを実行する．
@@ -165,18 +140,40 @@ DODDLE-OWL.exeまたはDODDLE-OWL.appファイルを実行する．
 オプションダイアログ: 基本タブ
 --------------------------------------------------
 
-* BASE_URI=http://www.yamaguti.comp.ae.keio.ac.jp/doddle#
-
-  * オントロジー保存時のベースURIを設定します．
-* BASE_PREFIX=keio
-
-  * ユーザが定義した概念の接頭辞を設定します．
-* LANG=ja
+* 言語
 
   * enまたはjaを指定することで，英語または日本語メニューを表示することができます．
 
+* 基本接頭辞
+
+  * ユーザが定義した概念の接頭辞を設定します．
+
+* 基本URI
+
+  * オントロジー保存時のベースURIを設定します．
+
 オプションダイアログ: フォルダタブ
 -----------------------------------------------------------
+
+* プロジェクトフォルダ
+
+  * 初期パス: C:/DODDLE-OWL/DODDLEProject
+  * プロジェクトファイルを保存するフォルダを設定します．プロジェクトを保存・復元する際に このフォルダが基点となります．
+      
+* ストップワードリスト
+
+  * 初期パス: C:/DODDLE-OWL/stop_word_list.txt
+  * 用語抽出時に無視する単語リストが保存されたファイルを設定します．
+
+* EDR辞書フォルダ
+
+  * 初期パス: C:/DODDLE-OWL/EDR_DIC
+  * EDR一般辞書のテキストデータをDODDLE用に変換したファイルを置いたフォルダを設定します．
+
+* EDRT辞書フォルダ
+
+  * 初期パス: C:/DODDLE-OWL/EDRT_DIC
+  * EDR専門辞書のテキストデータをDODDLE用に変換したファイルを置いたフォルダを設定します．
 
 * 日本語形態素解析器
 
@@ -193,40 +190,21 @@ DODDLE-OWL.exeまたはDODDLE-OWL.appファイルを実行する．
   * 初期パス: C:/Perl/bin/perl.exe
   * 言選(TermExtract)を利用する場合に必要です．
 
-* EDR辞書フォルダ
-
-  * 初期パス: C:/DODDLE-OWL/EDR_DIC
-  * EDR一般辞書のテキストデータをDODDLE用に変換したファイルを置いたフォルダを設定します．
-
-* EDRT辞書フォルダ
-
-  * 初期パス: C:/DODDLE-OWL/EDRT_DIC
-  * EDR専門辞書のテキストデータをDODDLE用に変換したファイルを置いたフォルダを設定します．
-
-* プロジェクトフォルダ
-
-  * 初期パス: C:/DODDLE-OWL/DODDLEProject
-  * プロジェクトファイルを保存するフォルダを設定します．プロジェクトを保存・復元する際に このフォルダが基点となります．
-      
 * 上位概念リスト
 
   * 初期パス: C:/DODDLE-OWL/upperConceptList.txt
   * 上位概念のリストを設定します．ある単語がEDR上の指定した概念の下位にあるかどうかを提示するために利用します．
 
-* ストップワードリスト
-
-  * 初期パス: C:/DODDLE-OWL/stop_word_list.txt
-  * 用語抽出時に無視する単語リストが保存されたファイルを設定します．
 
 EDR電子化辞書の利用方法
 ===========================================
 DODDLE-OWLでEDR電子化辞書を汎用オントロジーとして参照するためには，EDR電子化辞書のテキストデータをDODDLE-OWLで参照する形式に変換する必要があります．
 以下では，その変換手順について説明します．
 
-Intel Core2 CPU T5600 1.83GHz，メモリ1GBのPCにおけるEDR一般辞書とEDR専門辞書のDODDLE-OWLで参照する形式への変換時間は以下の通りです．
+CPU: Intel Core i7 4GHz，メモリ: 32GBのiMacを用いてEDR一般辞書とEDR専門辞書をDODDLE-OWLで参照する形式に変換するためにかかる時間は以下の通りです．
 
-* EDR一般辞書: 約11分
-* EDR専門辞書: 約3分
+* EDR一般辞書: 約3分
+* EDR専門辞書: 約40秒
 
 必要条件
 --------
