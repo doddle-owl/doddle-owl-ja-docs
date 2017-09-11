@@ -699,6 +699,29 @@ perl.exe
   
   * バージョン番号や利用ライブラリなどを確認するためのダイアログを表示する．
 
+ツールバー
+==========================
+
+.. list-table:: DODDLE-OWLにおけるツールバーのアイコンと機能
+  :name: toolbar-icons
+
+  * - アイコン
+    - 機能
+  * - .. figure:: figures/toolbar/page_white.png
+    - 新規プロジェクト
+  * - .. figure:: figures/toolbar/folder_page_white.png
+    - プロジェクトを開く
+  * - .. figure:: figures/toolbar/disk.png
+    - プロジェクトを上書き保存
+  * - .. figure:: figures/toolbar/page_save.png
+    - プロジェクトを名前を付けて保存
+  * - .. figure:: figures/toolbar/plugin.png
+    - DODDLE Dic Converter
+  * - .. figure:: figures/toolbar/cog.png
+    - オプションダイアログを表示
+  * - .. figure:: figures/toolbar/help.png
+    - バージョンダイアログを表示        
+
 ショートカットキー
 ==============================
 * Ctrl-N
