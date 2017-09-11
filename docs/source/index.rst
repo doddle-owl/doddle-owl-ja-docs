@@ -2,9 +2,6 @@
 DODDLE-OWL ドキュメント
 ==================================
 
-.. warning::
-	現在，ドキュメントを移行中です
-
 .. toctree::
    :caption: ユーザドキュメント
 
@@ -16,6 +13,3 @@ DODDLE-OWL ドキュメント
 索引
 ----
 * :ref:`genindex`
-
-.. * :ref:`modindex`
-.. * :ref:`search`

@@ -16,4 +16,3 @@
 .. [Page98] L. Page, S. Brin, R. Motwani, and T. Winograd, “The PageRank Citation Ranking: Bringing Order to the Web,” Technical report, Stanford Digital Library Technologies Project, 1998, http://citeseer.ist.psu.edu/page98pagerank.html.
 .. [Yamaguchi99] 山口高平，槫松理樹，青木千鶴，関内律恵子，加賀山茂，吉野一，“計算機可読型辞書を利用した領域オントロジー構築支援環境，” 人工知能学会誌，vol.14，no.6，pp.1080–1087，1999.
 .. [Yokoi95] T. Yokoi, “The EDR Electronic Dictionary,” Commun. ACM, vol.38, no.11, pp.42-44, 1995, http://www2.nict.go.jp/r/r312/EDR/.
-

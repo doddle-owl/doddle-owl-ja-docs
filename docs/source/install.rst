@@ -5,16 +5,11 @@
 .. contents:: コンテンツ 
    :depth: 3
 
-.. warning::
-    一部，古いバージョンの内容が含まれています
-
-
 動作環境
---------
-
+==================
 DODDLE-OWLを実行するためには，以下の環境が必要です．
 
-* JRE (Java Runtime Environment) 6以降
+* JRE (Java Runtime Environment) 8以降
 * OS: Javaが動作可能なOS（推奨 Windows XP）
 * CPU: Pentium4 2GHz程度
 * メモリ: 1GB以上
@@ -23,15 +18,14 @@ DODDLE-OWLを実行するためには，以下の環境が必要です．
 
 DODDLE-OWLの開発および動作確認は以下の環境で行っています．
 
-* JDK 6 Update1
+* JDK 8 
 * OS: Windows XP
 * CPU: Pentium4 3.4GHz
 * メモリ: 2GB
 * ディスプレイ: 解像度1920×1200 のカラーディスプレイ
 
 利用しているライブラリ
-----------------------
-
+====================================
 DODDLE-OWLは以下のライブラリを利用しています．以下のライブラリについては，DODDLE-OWLに含まれているため別途ダウンロードする必要はありません．
 
 * `Apache Jena <http://jena.apache.org/>`_
@@ -94,8 +88,7 @@ DODDLE-OWLは以下のライブラリを利用しています．以下のライ�
   * ライセンス: `Creative Commons Attribution 2.5 License <http://creativecommons.org/licenses/by/2.5/>`_.
 
 利用しているソフトウェア
-------------------------
-
+=======================================
 DODDLE-OWLは，以下のソフトウェアを利用しています．以下の注意点に記述されていることを行いたい場合には，別途以下のソフトウェアのインストールが必要です．
 
 * JRE 6以上 （必須）
@@ -106,7 +99,7 @@ DODDLE-OWLは，以下のソフトウェアを利用しています．以下の�
 * `TermExtract <http://gensen.dl.itc.u-tokyo.ac.jp/termextract.html>`_ （オプション）
 
 注意点
-~~~~~~
+------------------
 * Beta6からは，ChaSen, MeCab, CaboChaは，UTF-8のみに対応しています．
 
   * ChaSenでUTF-8を利用する方法は，ChaSen’s Wiki FAQを参照してください．
@@ -119,28 +112,28 @@ DODDLE-OWLは，以下のソフトウェアを利用しています．以下の�
 * EDR電子化辞書から領域オントロジーを構築したい場合には，EDR電子化辞書の概念体系辞書(必須)，日本語単語辞書(必須)，英語単語辞書(オプション)，概念記述辞書(オプション)が必要です．
 
 参照オントロジー
-----------------
+===============================
 
 英語汎用オントロジー
-~~~~~~~~~~~~~~~~~~~~
-
+------------------------------
 * `WordNet <http://wordnet.princeton.edu/>`_
 
 日本語汎用オントロジー
-~~~~~~~~~~~~~~~~~~~~~~
-
+-------------------------------------
 * `EDR電子化辞書 <https://www2.nict.go.jp/out-promotion/techtransfer/EDR/J_index.html>`_
 * `日本語WordNet <http://compling.hss.ntu.edu.sg/wnja/>`_
 * `日本語Wikipediaオントロジー <https://osdn.jp/projects/wikipedia-ont/>`_
 
-インストール
-------------
-
+インストール方法
+=====================================
 `ダウンロードページ <http://doddle-owl.org/download-ja.html>`_ からDODDLE-xxx.zipファイルを解凍し，適当なフォルダ（以下，インストールフォルダ）にコピーすればインストール完了です．
 
-ファイル構成
-~~~~~~~~~~~~
+アンインストール方法
+========================================
+インストールフォルダを削除すればアンインストール完了です．
 
+ファイル構成
+==================================
 DODDLE/DODDLE.bat
     Windows用の実行ファイル
 DODDLE/DODDLE_DIC_Converter.bat
@@ -164,39 +157,16 @@ DODDLE/stop_word_list.txt
 DODDLE/resources/DODDLEComponent.owl
     DODDLE-OWLのユーザインタフェースで使用している語彙を管理するOWLオントロジー
 
-アンインストール
-----------------
-
-インストールフォルダを削除すればアンインストール完了です．
-
 実行方法
---------
+=====================
+DODDLE-OWL.exeまたはDODDLE-OWL.appファイルを実行する．
 
-Java Web Start版からの実行
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-1. JRE 6以上をインストールし，java.exeの場所を環境変数PATHに追加する．
-2. ダウンロードページにあるdoddle-owl.jnlpをクリック
-
-DODDLE-xxx.zipファイルからの実行
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-1. JRE 6以上をインストールし，java.exeの場所を環境変数PATHに追加．
-2. DODDLEプログラム(DODDLE-xxxx.zip)を適当なフォルダ(インストールフォルダ)に解凍する．
-3. 複合語を抽出したい場合には，TermExtractまたはCaboChaをインストールする．
-4. DODDLE.batを実行．
-
-  * 256MB程度のメモリがあれば動作可能．(JVMオプション -Xmx 256m)
-  * DODDLE.batの初期設定では，JVMのオプションは，-Xms256m -Xmx512mとしている．
-  * ただし，構築するオントロジーの概念数が多い場合には，上記以上のメモリが必要となる場合もある．
-
-各種定
-~~~~~~
-
+設定
+===============
 各種設定は，オプションダイアログからGUIで行います．
 
 オプションダイアログ: 基本タブ
-""""""""""""""""""""""""""""""
+--------------------------------------------------
 
 * BASE_URI=http://www.yamaguti.comp.ae.keio.ac.jp/doddle#
 
@@ -209,7 +179,7 @@ DODDLE-xxx.zipファイルからの実行
   * enまたはjaを指定することで，英語または日本語メニューを表示することができます．
 
 オプションダイアログ: フォルダタブ
-""""""""""""""""""""""""""""""""""
+-----------------------------------------------------------
 
 * 日本語形態素解析器
 
@@ -252,60 +222,42 @@ DODDLE-xxx.zipファイルからの実行
   * 用語抽出時に無視する単語リストが保存されたファイルを設定します．
 
 EDR電子化辞書の利用方法
------------------------
+===========================================
+DODDLE-OWLでEDR電子化辞書を汎用オントロジーとして参照するためには，EDR電子化辞書のテキストデータをDODDLE-OWLで参照する形式に変換する必要があります．
+以下では，その変換手順について説明します．
 
-DODDLE-OWLでEDR電子化辞書を汎用オントロジーとして参照するためには，EDR電子化辞書のテキストデータをDODDLE-OWLで参照する形式に変換する必要があります．以下では，その変換手順について説明します．
-
-現状では，変換アルゴリズムが悪いため，辞書データの変換時間とメモリを大量に消費します．Intel Core2CPU T5600 1.83GHz，メモリ1GB程度の変換時間は以下のとおりです．
+Intel Core2 CPU T5600 1.83GHz，メモリ1GBのPCにおけるEDR一般辞書とEDR専門辞書のDODDLE-OWLで参照する形式への変換時間は以下の通りです．
 
 * EDR一般辞書: 約11分
 * EDR専門辞書: 約3分
 
 必要条件
 --------
-
 * 1GB以上のメモリ(推奨 2GB) (JVMオプション -Xmx1024mが指定可能な程度)
 * EDR一般辞書またはEDR専門辞書のテキストデータ
-* GoSenをインストールし，DODDLE-OWLのオプションダイアログでGoSen設定ファイルとEDR(T)辞書フォルダを設定．
-
 
 EDR一般辞書
-~~~~~~~~~~~
-
-1. CPC.DIC, CPH.DIC, CPT.DIC, EWD.DIC, JWD.DICを任意のフォルダにコピーする．(例：C:/EDR_Text)．
-2. DODDLE-OWLをインストールしたフォルダにある，DODDLE_DIC_Converter.batを実行する．:numref:`doddle_dic_converter` のウィンドウが表示される．
-3. 「Dictionary Type」として「EDR」を，「Convertion Type」として「Text」を選択する．
-4. 「Browse」ボタンを押して，Input Dictionary PathにEDR一般辞書のテキストデータが保存されたフォルダを設定する．Output Dictionary Pathに，DODDLE-OWLが参照する変換後のEDR一般辞書データを保存するフォルダを設定する．
-5. 「Convert」ボタンを押すと，concept.data, relation.data, tree.data, word.data, concept.index, relation.index, tree.index, word.indexファイルが設定したEDR_HOMEに保存される.
-6. DODDLE-OWLのオプションダイアログのフォルダタブでEDR辞書フォルダを設定する．
-7. 「Exit」ボタンでプログラムを終了する．
+--------------------------
+#. CPC.DIC, CPH.DIC, CPT.DIC, EWD.DIC, JWD.DICを任意のフォルダにコピーする．(例：C:/EDR_Text)．
+#. DODDLE-OWLのツールメニューの「DODDLE Dic Converter」サブメニューを選択すると :numref:`doddle-dic-converter` のダイアログが表示される．
+#. 「Dictionary Type」として「EDR」を，「Convertion Type」として「Text」を選択する．
+#. 「Browse」ボタンを押して，Input Dictionary PathにEDR一般辞書のテキストデータが保存されたフォルダを設定する．Output Dictionary Pathに，DODDLE-OWLが参照する変換後のEDR一般辞書データを保存するフォルダを設定する．
+#. 「Convert」ボタンを押すと，concept.data, relation.data, tree.data, word.data, concept.index, relation.index, tree.index, word.indexファイルがオプションダイアログで設定したEDR辞書フォルダに保存される.
+#. DODDLE-OWLのオプションダイアログのフォルダタブでEDR辞書フォルダのパスを設定する．
 
 EDR専門辞書
-~~~~~~~~~~~
+----------------------------
+#. TCPC.DIC, TCPH.DIC, TEWD.DIC, TJWD.DICを任意のフォルダにコピーする．(例： C:/EDRT_Text/).
+#. DODDLE-OWLのツールメニューの「DODDLE Dic Converter」サブメニューを選択すると :numref:`doddle-dic-converter` のダイアログが表示される．
+#. 「Dictionary Type」として「EDRT」を，「Convertion Type」として「Text」を選択する．
+#. 「Browse」ボタンを押して，Input Dictionary PathにEDR専門辞書のテキストデータが保存されたフォルダを設定する．Output Dictionary PathにDODDLE-OWLが参照する変換後のEDR専門辞書のデータを保存するフォルダを設定する．
+#. 「Convert」ボタンを押すと，concept.data, tree.data, word.data, concept.index, tree.index, word.indexファイルがオプションダイアログで設定したEDRT辞書フォルダに保存される．
+#. DODDLE-OWLのオプションダイアログのフォルダタブでEDRT辞書フォルダのパスを設定する．
 
-1. TCPC.DIC, TCPH.DIC, TEWD.DIC, TJWD.DICを任意のフォルダにコピーする．(例： C:/EDRT_Text/).
-2. DODDLE-OWLをインストールしたフォルダにある，DODDLE_DIC_Converter.batを実行する．:numref:`doddle_dic_converter` のウィンドウが表示される．
-3. 「Dictionary Type」として「EDRT」を，「Convertion Type」として「Text」を選択する．
-4. 「Browse」ボタンを押して，Input Dictionary PathにEDR専門辞書のテキストデータが保存されたフォルダを設定する．Output Dictionary PathにDODDLE-OWLが参照する変換後のEDR専門辞書のデータを保存するフォルダを設定する．
-5. 「Convert」ボタンを押すと，concept.data, tree.data, word.data, concept.index, tree.index, word.indexファイルが設定したフォルダに保存される．
-6. DODDLE-OWLのオプションダイアログのフォルダタブでEDRT辞書フォルダを設定する．
-7. 「Exit」ボタンでプログラムを終了する．
-
-.. _doddle_dic_converter:
-.. figure:: figures/doddle_dic_converter.png
+.. _doddle-dic-converter:
+.. figure:: figures/doddle-dic-converter.png
    :scale: 80 %
    :alt: DODDLE_Dic_Converter
    :align: center
 
    DODDLE_Dic_Converter
-
-
-起動時オプション
-----------------
-
-* –DEBUG: デバッグ情報をコンソールに表示
-* –LANG=[en|ja]: 表示言語を切り替える
-
-TODO
-----
-* 最新版の状況に書き換える
