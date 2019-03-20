@@ -187,7 +187,7 @@ SPARQL テンプレートを用いたオントロジー要素抽出
 
 .. _ontology-selection-panel:
 .. figure:: figures/ontology-selection-panel.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: 汎用オントロジー選択パネル
    :align: center
 
@@ -200,7 +200,7 @@ OWLオントロジー選択パネル
 
 .. _owl-ontology-selection-panel:
 .. figure:: figures/owl-ontology-selection-panel.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: OWLオントロジー選択パネル
    :align: center
 
@@ -213,7 +213,7 @@ OWLオントロジー選択パネル
 
 .. _input-document-selection-panel:
 .. figure:: figures/input-document-selection-panel.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: 入力文書選択パネル
    :align: center
 
@@ -236,7 +236,7 @@ OWLオントロジー選択パネル
 
 .. _input-document-viewer:
 .. figure:: figures/input-document-viewer.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: 入力文書ビューア
    :align: center
 
@@ -256,7 +256,7 @@ OWLオントロジー選択パネル
 
 .. _input-term-table:
 .. figure:: figures/input-term-table.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: 入力語情報テーブル
    :align: center
 
@@ -277,7 +277,7 @@ OWLオントロジー選択パネル
 
 .. _removed-term-table:
 .. figure:: figures/removed-term-table.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: 削除語情報テーブル
    :align: center
 
@@ -289,7 +289,7 @@ OWLオントロジー選択パネル
 
 .. _input-concept-selection-panel:
 .. figure:: figures/input-concept-selection-panel.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: 入力概念選択パネル
    :align: center
 
@@ -309,7 +309,7 @@ OWLオントロジー選択パネル
 
 .. _input-concept-selection-panel-term-list:
 .. figure:: figures/input-concept-selection-panel-term-list.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: 入力概念選択パネル: 用語リスト
    :align: center
 
@@ -339,7 +339,7 @@ OWLオントロジー選択パネル
 
 .. _input-concept-selection-panel-concept-list:
 .. figure:: figures/input-concept-selection-panel-concept-list.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: 入力概念選択パネル: 概念リスト
    :align: center
 
@@ -353,7 +353,7 @@ OWLオントロジー選択パネル
 
 .. _input-concept-selection-panel-concept-info:
 .. figure:: figures/input-concept-selection-panel-concept-info.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: 入力概念選択パネル: 概念情報
    :align: center
 
@@ -374,7 +374,7 @@ OWLオントロジー選択パネル
 
 .. _input-concept-selection-panel-construct-concept-tree-option:
 .. figure:: figures/input-concept-selection-panel-construct-concept-tree-option.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: 入力概念選択パネル: 階層構築オプション
    :align: center
 
@@ -394,7 +394,7 @@ OWLオントロジー選択パネル
 
 .. _construct-class-tree-panel:
 .. figure:: figures/construct-class-tree-panel.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: クラス階層構築パネル
    :align: center
 
@@ -415,7 +415,7 @@ OWLオントロジー選択パネル
 
 .. _construct-class-tree-panel-concept-info:
 .. figure:: figures/construct-class-tree-panel-concept-info.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: クラス階層構築パネル: 概念情報パネル
    :align: center
 
@@ -435,7 +435,7 @@ Is-a 階層およびHas-a 階層パネル
 
 .. _construct-class-tree-panel-isa-hasa-tree-panel:
 .. figure:: figures/construct-class-tree-panel-isa-hasa-tree-panel.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: クラス階層構築パネル: Is-a階層パネルとHas-a階層パネル
    :align: center
 
@@ -447,7 +447,7 @@ Is-a 階層およびHas-a 階層パネル
 
 .. _construct-class-tree-panel-popup-menu:
 .. figure:: figures/construct-class-tree-panel-popup-menu.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: クラス階層構築パネル: ポップアップメニュー
    :align: center
 
@@ -459,7 +459,7 @@ DODDLE-OWLにおける概念の削除は3 種類ある．「概念の削除」�
 
 .. _construct-class-tree-panel-node-icon:
 .. figure:: figures/construct-class-tree-panel-node-icon.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: クラス階層構築パネル: ノードのアイコン
    :align: center
 
@@ -473,7 +473,7 @@ DODDLE-OWLにおける概念の削除は3 種類ある．「概念の削除」�
 
 .. _construct-class-tree-panel-concept-drift-management-panel:
 .. figure:: figures/construct-class-tree-panel-concept-drift-management-panel.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: クラス階層構築パネル: 概念変動管理パネル
    :align: center
 
@@ -491,7 +491,7 @@ DODDLE-OWLにおける概念の削除は3 種類ある．「概念の削除」�
 
 .. _construct-property-tree-panel:
 .. figure:: figures/construct-property-tree-panel.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: プロパティ階層構築パネル
    :align: center
 
@@ -501,7 +501,7 @@ DODDLE-OWLにおける概念の削除は3 種類ある．「概念の削除」�
 
 .. _construct-property-tree-panel-node-icon:
 .. figure:: figures/construct-property-tree-panel-node-icon.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: プロパティ階層構築パネル: ノードのアイコン
    :align: center
 
@@ -515,7 +515,7 @@ DODDLE-OWLにおける概念の削除は3 種類ある．「概念の削除」�
 
 .. _construct-relationship-panel:
 .. figure:: figures/construct-relationship-panel.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: 関係構築パネル
    :align: center
 
@@ -543,7 +543,7 @@ DODDLE-OWLにおける概念の削除は3 種類ある．「概念の削除」�
 
 .. _option-dialog-basic:
 .. figure:: figures/option-dialog-basic.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: オプションダイアログ：基本
    :align: center
 
@@ -577,7 +577,7 @@ perl.exe
 
 .. _option-dialog-folder:
 .. figure:: figures/option-dialog-folder.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: オプションダイアログ：フォルダ
    :align: center
 
@@ -589,7 +589,7 @@ perl.exe
 
 .. _option-dialog-input-concept-selection:
 .. figure:: figures/option-dialog-input-concept-selection.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: オプションダイアログ：入力概念選択
    :align: center
 
@@ -601,7 +601,7 @@ perl.exe
 
 .. _option-dialog-compound-word:
 .. figure:: figures/option-dialog-compound-word.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: オプションダイアログ：複合語
    :align: center
 
@@ -614,7 +614,7 @@ perl.exe
 
 .. _option-dialog-display:
 .. figure:: figures/option-dialog-display.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: オプションダイアログ：表示
    :align: center
 

@@ -17,7 +17,7 @@ DODDLE-OWL では一つ以上の領域における専門文書があることを
 
 .. _system_flow:
 .. figure:: figures/system-flow.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: DODDLE-OWLのシステム構成
    :align: center
 

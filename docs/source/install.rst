@@ -9,7 +9,7 @@
 ==================
 DODDLE-OWLを実行するためには，以下の環境が必要です．
 
-* JRE (Java Runtime Environment) 8以降
+* JRE (Java Runtime Environment) 11以降
 * OS: Javaが動作可能なOS
 * CPU: Pentium4 2GHz程度
 * メモリ: 1GB以上
@@ -18,7 +18,7 @@ DODDLE-OWLを実行するためには，以下の環境が必要です．
 
 DODDLE-OWLの開発および動作確認は以下の環境で行っています．
 
-* JDK 8 
+* JDK 11
 * OS: macOS Sierra
 * CPU: Intel Core i7 4GHz
 * メモリ: 32GB
