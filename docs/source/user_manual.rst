@@ -187,7 +187,7 @@ SPARQL テンプレートを用いたオントロジー要素抽出
 
 .. _ontology-selection-panel:
 .. figure:: figures/ontology-selection-panel.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: 汎用オントロジー選択パネル
    :align: center
 
@@ -200,7 +200,7 @@ OWLオントロジー選択パネル
 
 .. _owl-ontology-selection-panel:
 .. figure:: figures/owl-ontology-selection-panel.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: OWLオントロジー選択パネル
    :align: center
 
@@ -213,7 +213,7 @@ OWLオントロジー選択パネル
 
 .. _input-document-selection-panel:
 .. figure:: figures/input-document-selection-panel.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: 入力文書選択パネル
    :align: center
 
@@ -236,7 +236,7 @@ OWLオントロジー選択パネル
 
 .. _input-document-viewer:
 .. figure:: figures/input-document-viewer.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: 入力文書ビューア
    :align: center
 
@@ -256,7 +256,7 @@ OWLオントロジー選択パネル
 
 .. _input-term-table:
 .. figure:: figures/input-term-table.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: 入力語情報テーブル
    :align: center
 
@@ -277,7 +277,7 @@ OWLオントロジー選択パネル
 
 .. _removed-term-table:
 .. figure:: figures/removed-term-table.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: 削除語情報テーブル
    :align: center
 
@@ -289,7 +289,7 @@ OWLオントロジー選択パネル
 
 .. _input-concept-selection-panel:
 .. figure:: figures/input-concept-selection-panel.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: 入力概念選択パネル
    :align: center
 
@@ -309,7 +309,7 @@ OWLオントロジー選択パネル
 
 .. _input-concept-selection-panel-term-list:
 .. figure:: figures/input-concept-selection-panel-term-list.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: 入力概念選択パネル: 用語リスト
    :align: center
 
@@ -339,7 +339,7 @@ OWLオントロジー選択パネル
 
 .. _input-concept-selection-panel-concept-list:
 .. figure:: figures/input-concept-selection-panel-concept-list.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: 入力概念選択パネル: 概念リスト
    :align: center
 
@@ -353,7 +353,7 @@ OWLオントロジー選択パネル
 
 .. _input-concept-selection-panel-concept-info:
 .. figure:: figures/input-concept-selection-panel-concept-info.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: 入力概念選択パネル: 概念情報
    :align: center
 
@@ -374,7 +374,7 @@ OWLオントロジー選択パネル
 
 .. _input-concept-selection-panel-construct-concept-tree-option:
 .. figure:: figures/input-concept-selection-panel-construct-concept-tree-option.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: 入力概念選択パネル: 階層構築オプション
    :align: center
 
@@ -394,7 +394,7 @@ OWLオントロジー選択パネル
 
 .. _construct-class-tree-panel:
 .. figure:: figures/construct-class-tree-panel.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: クラス階層構築パネル
    :align: center
 
@@ -415,7 +415,7 @@ OWLオントロジー選択パネル
 
 .. _construct-class-tree-panel-concept-info:
 .. figure:: figures/construct-class-tree-panel-concept-info.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: クラス階層構築パネル: 概念情報パネル
    :align: center
 
@@ -435,7 +435,7 @@ Is-a 階層およびHas-a 階層パネル
 
 .. _construct-class-tree-panel-isa-hasa-tree-panel:
 .. figure:: figures/construct-class-tree-panel-isa-hasa-tree-panel.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: クラス階層構築パネル: Is-a階層パネルとHas-a階層パネル
    :align: center
 
@@ -447,7 +447,7 @@ Is-a 階層およびHas-a 階層パネル
 
 .. _construct-class-tree-panel-popup-menu:
 .. figure:: figures/construct-class-tree-panel-popup-menu.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: クラス階層構築パネル: ポップアップメニュー
    :align: center
 
@@ -459,7 +459,7 @@ DODDLE-OWLにおける概念の削除は3 種類ある．「概念の削除」�
 
 .. _construct-class-tree-panel-node-icon:
 .. figure:: figures/construct-class-tree-panel-node-icon.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: クラス階層構築パネル: ノードのアイコン
    :align: center
 
@@ -473,7 +473,7 @@ DODDLE-OWLにおける概念の削除は3 種類ある．「概念の削除」�
 
 .. _construct-class-tree-panel-concept-drift-management-panel:
 .. figure:: figures/construct-class-tree-panel-concept-drift-management-panel.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: クラス階層構築パネル: 概念変動管理パネル
    :align: center
 
@@ -491,7 +491,7 @@ DODDLE-OWLにおける概念の削除は3 種類ある．「概念の削除」�
 
 .. _construct-property-tree-panel:
 .. figure:: figures/construct-property-tree-panel.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: プロパティ階層構築パネル
    :align: center
 
@@ -501,7 +501,7 @@ DODDLE-OWLにおける概念の削除は3 種類ある．「概念の削除」�
 
 .. _construct-property-tree-panel-node-icon:
 .. figure:: figures/construct-property-tree-panel-node-icon.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: プロパティ階層構築パネル: ノードのアイコン
    :align: center
 
@@ -515,7 +515,7 @@ DODDLE-OWLにおける概念の削除は3 種類ある．「概念の削除」�
 
 .. _construct-relationship-panel:
 .. figure:: figures/construct-relationship-panel.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: 関係構築パネル
    :align: center
 
@@ -543,7 +543,7 @@ DODDLE-OWLにおける概念の削除は3 種類ある．「概念の削除」�
 
 .. _option-dialog-basic:
 .. figure:: figures/option-dialog-basic.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: オプションダイアログ：基本
    :align: center
 
@@ -577,7 +577,7 @@ perl.exe
 
 .. _option-dialog-folder:
 .. figure:: figures/option-dialog-folder.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: オプションダイアログ：フォルダ
    :align: center
 
@@ -589,7 +589,7 @@ perl.exe
 
 .. _option-dialog-input-concept-selection:
 .. figure:: figures/option-dialog-input-concept-selection.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: オプションダイアログ：入力概念選択
    :align: center
 
@@ -601,7 +601,7 @@ perl.exe
 
 .. _option-dialog-compound-word:
 .. figure:: figures/option-dialog-compound-word.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: オプションダイアログ：複合語
    :align: center
 
@@ -614,7 +614,7 @@ perl.exe
 
 .. _option-dialog-display:
 .. figure:: figures/option-dialog-display.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: オプションダイアログ：表示
    :align: center
 
@@ -627,123 +627,104 @@ perl.exe
 ファイルメニュー
 ----------------------
 
-* 新規プロジェクト
-
-  * 新規にDODDLE-OWLプロジェクトを作成する
-
-* プロジェクトを開く
-
-  * DODDLE-OWLのプロジェクトフォルダまたはプロジェクトファイルを開く
-
-* 最近のプロジェクトを開く
-* 開く->入力語リストを開く
-* 開く->入力語テーブルを開く
-* 開く->概念記述を開く
-* 開く->入力概念選択結果を開く
-* 開く->入力語と概念の対応を開く
-* 開く->OWLオントロジーを開く
-* 開く->FreeMindオントロジーを開く
-* 開く->概念と優先見出しの対応を開く
-* プロジェクトを上書き保存
-* プロジェクトを名前を付けて保存
-
-  * DODDLE-OWLのプロジェクトを名前をつけて保存する．処理途中の中間結果ファイルを確認したい場合にはファイル形式としてDODDLEプロジェクトフォルダを選択する．一つのファイルにまとめて保存したい場合には，DODDLEプロジェクトファイル(.ddl)を選択する．
-
-* 保存->入力語リストを保存
-* 保存->入力語テーブルを保存
-* 保存->概念記述を保存
-* 保存->入力概念選択結果を保存
-* 保存->入力語と概念の対応を保存
-* 保存->OWLオントロジーを保存
-* 保存->FreeMindオントロジーを保存
-* 保存->概念と優先見出しの対応を保存
-
-* 終了
-
-  * DODDLE-OWLを終了する
+新規プロジェクト
+  新規にDODDLE-OWLプロジェクトを作成する
+プロジェクトを開く
+  DODDLE-OWLのプロジェクトフォルダまたはプロジェクトファイルを開く
+最近のプロジェクトを開く
+  DODDLE-OWLで最近開いたプロジェクトのリストが表示される
+開く->用語リストを開く
+  用語選択パネルに入力する用語リストを開く
+開く->用語テーブルを開く
+  用語選択パネルにおける用語情報テーブルを復元するためのファイルを開く
+開く->概念記述を開く
+   プロパティ階層構築パネルにおける定義域と値域の定義ファイルを開く
+開く->概念選択結果を開く
+  概念選択パネルにおける概念選択を復元するためのファイルを開く
+開く->用語と概念の対応を開く
+  概念選択パネルにおいて選択した用語と概念の対応関係を復元するためのファイルを開く
+開く->OWLオントロジーを開く
+  OWLファイルからクラス階層とプロパティ階層を復元する
+開く->FreeMindオントロジーを開く
+  FreeMindオントロジーからクラス階層を復元する
+開く->概念と優先見出しの対応を開く
+  クラスおよびプロパティ階層構築パネルで定義した概念と優先見出しの対応を復元するためのファイルを開く
+プロジェクトを上書き保存
+  現在開いているプロジェクトファイルを上書き保存する
+プロジェクトを名前を付けて保存
+  DODDLE-OWLのプロジェクトを名前をつけて保存する．処理途中の中間結果ファイルを確認したい場合にはファイル形式としてDODDLEプロジェクトフォルダを選択する．一つのファイルにまとめて保存したい場合には，DODDLEプロジェクトファイル(.ddl)を選択する．
+保存->用語リストを保存
+  用語選択パネルで選択した用語リストをファイルに保存する
+保存->用語テーブルを保存
+  用語選択パネルにおける用語情報テーブルをファイルに保存する
+保存->概念選択結果を保存
+  概念選択パネルにおいて選択した概念リストをファイルに保存する
+保存->用語と概念の対応を保存
+  概念選択パネルにおいて選択した用語と概念の対応関係をファイルに保存する
+保存->完全照合語リストを保存
+  概念選択パネルにおける完全照合語リストをファイルに保存する
+保存->完全照合語と対応する複合語を保存
+  概念選択パネルにおける完全照合語と対応する複合語をファイルに保存する
+保存->OWLオントロジーを保存
+  クラスおよびプロパティ階層構築パネルで構築したオントロジーをOWL形式で保存する
+保存->FreeMindオントロジーを保存
+  クラスおよびプロパティ階層構築パネルで構築したオントロジーをFreeMind形式で保存する
+保存->概念と優先見出しの対応を保存
+  クラスおよびプロパティ階層パネルで定義した概念と優先見出しの対応をファイルに保存する
+DODDLE-OWLを終了
+  DODDLE-OWLを終了する
 
 ツールメニュー
 -----------------------
-* すべての用語を表示
-* 自動入力概念選択
-
-  * 入力語集合から自動的に入力語に対応する汎用オントロジー中の概念をランキングする．入力概念選択パネル中で入力語を選択した際に，ランキング順に対応する概念を表示する．
-
-* クラス階層構築
-* クラス及びプロパティ階層構築
-* DODDLE Dic Converter
-
-  * EDR電子化辞書と日本語WordNetの辞書ファイルををDODDLE-OWLで利用可能な形式に変換するためのダイアログを表示する．
-
-* ログコンソールを表示
-
-  * 標準出力と標準エラー出力を画面上に表示する．
-
-* XGAレイアウト
-
-  * 1024x768の解像度に合わせてウィンドウをレイアウトする．
-
-* UXGAレイアウト    
-
-  * 1600 x 1200の解像度に合わせてウィンドウをレイアウトする．
-
-* オプションダイアログを表示
-
-プロジェクトメニュー
-------------------------
-* 開いているプロジェクトをサブメニューとして表示し，切り替えることができる．
+すべての用語を表示
+  用語選択パネルで入力されたすべての用語を表示する
+自動入力概念選択
+  入力語集合から自動的に入力語に対応する汎用オントロジー中の概念をランキングする．入力概念選択パネル中で入力語を選択した際に，ランキング順に対応する概念を表示する．
+クラス階層構築
+  概念選択パネルにおける[**クラス階層構築**]ボタンと同様
+クラス及びプロパティ階層構築
+  概念選択パネルにおける[**クラス及びプロパティ階層構築**]ボタンと同様
+DODDLE Dic Converter
+  EDR電子化辞書と日本語WordNetの辞書ファイルををDODDLE-OWLで利用可能な形式に変換するためのダイアログを表示する．
+ログコンソールを表示
+  標準出力と標準エラー出力を画面上に表示する．
+オプションダイアログを表示
+  オプションダイアログを表示する
 
 ヘルプメニュー
 ----------------------------
-* バージョン
-  
-  * バージョン番号や利用ライブラリなどを確認するためのダイアログを表示する．
+バージョン
+  バージョン番号や利用ライブラリなどを確認するためのダイアログを表示する．
+DODDLE-OWL マニュアル
+  DODDLE-OWLのマニュアルのWebページをWebブラウザに表示する．
 
 ツールバー
 ==========================
 
-.. list-table:: DODDLE-OWLにおけるツールバーのアイコンと機能
+.. csv-table:: DODDLE-OWLにおけるツールバーのアイコンと機能
   :name: toolbar-icons
+  :header: アイコン, 機能
+  :align: center
+  :widths: 3, 10 
 
-  * - アイコン
-    - 機能
-  * - .. figure:: figures/toolbar/page_white.png
-    - 新規プロジェクト
-  * - .. figure:: figures/toolbar/folder_page_white.png
-    - プロジェクトを開く
-  * - .. figure:: figures/toolbar/disk.png
-    - プロジェクトを上書き保存
-  * - .. figure:: figures/toolbar/page_save.png
-    - プロジェクトを名前を付けて保存
-  * - .. figure:: figures/toolbar/plugin.png
-    - DODDLE Dic Converter
-  * - .. figure:: figures/toolbar/cog.png
-    - オプションダイアログを表示
-  * - .. figure:: figures/toolbar/help.png
-    - バージョンダイアログを表示        
+  .. figure:: figures/toolbar/new_project.png, 新規プロジェクト
+  .. figure:: figures/toolbar/open_project.png, プロジェクトを開く
+  .. figure:: figures/toolbar/save_project.png, プロジェクトを上書き保存
+  .. figure:: figures/toolbar/saveas_project.png, プロジェクトを名前を付けて保存
+  .. figure:: figures/toolbar/option_dialog.png, オプションダイアログを表示
+  .. figure:: figures/toolbar/help.png, バージョンダイアログを表示        
 
 ショートカットキー
 ==============================
-* Ctrl-N
 
-  * 新規プロジェクト
-* Ctrl-O
+.. csv-table::
+  :header: ショートカットキー, 説明
+  :align: center
+  :widths: 5, 10 
 
-  * プロジェクトを開く
-
-* Ctrl-S
-
-  * プロジェクトを上書き保存
-
-* Ctrl-Shift-S
-
-  * プロジェクトを名前を付けて保存
-
-* Ctrl-Q
-
-  * 終了
-
-* F1
-
-  * バージョンダイアログを表示
-  
+  Ctrl + N | Command + N, 新規プロジェクト
+  Ctrl + O | Command + O, プロジェクトを開く
+  Ctrl + S | Command + S, プロジェクトを上書き保存
+  Ctrl + Shift + S | Command + Shift + S, プロジェクトを名前を付けて保存
+  Ctrl + Q | Command + Q, 終了
+  F1, バージョンダイアログを表示

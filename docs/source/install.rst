@@ -7,106 +7,96 @@
 
 動作環境
 ==================
-DODDLE-OWLを実行するためには，以下の環境が必要です．
+DODDLE-OWLを実行するためには，以下の環境が必要である．
 
-* JRE (Java Runtime Environment) 8以降
+* JRE (Java Runtime Environment) 11以降
 * OS: Javaが動作可能なOS
 * CPU: Pentium4 2GHz程度
 * メモリ: 1GB以上
 * ハードディスクの空き容量: 1GB以上
 * ディスプレイ: 解像度1024×768 以上のカラーディスプレイ
 
-DODDLE-OWLの開発および動作確認は以下の環境で行っています．
+DODDLE-OWLの開発および動作確認は以下の環境で行っている．
 
-* JDK 8 
-* OS: macOS Sierra
+* JDK 11
+* OS: macOS Mojava
 * CPU: Intel Core i7 4GHz
 * メモリ: 32GB
 * ディスプレイ: 解像度1920×1200 のカラーディスプレイ
 
 利用しているライブラリ
 ====================================
-DODDLE-OWLは以下のライブラリを利用しています．以下のライブラリについては，DODDLE-OWLに含まれているため別途ダウンロードする必要はありません．
+DODDLE-OWLは以下のライブラリを利用している．以下のライブラリについては，DODDLE-OWLに含まれているため別途ダウンロードする必要はない．
 
 * `Apache Jena <http://jena.apache.org/>`_
 
   * RDF, RDFS, OWLを扱うためのライブラリ
   * ライセンス: `Jena – License and Copyright <http://www.apache.org/licenses/LICENSE-2.0>`_
 
-* `Lucene-Gosen <https://github.com/lucene-gosen/lucene-gosen>`_
+* `Kuromoji <https://github.com/atilika/kuromoji>`_
 
   * Javaで実装された形態素解析器
-  * ライセンス: `LGPL (Lesser General Public License) <http://www.gnu.org/licenses/lgpl.html>`_
+  * ライセンス: `Apache License 2.0 <http://www.apache.org/licenses/LICENSE-2.0>`_
 
 * `extJWNL <http://extjwnl.sourceforge.net/>`_
 
   * Javaで実装されたWordNetを操作するためのライブラリ
   * ライセンス: `BSDライセンス <http://extjwnl.sourceforge.net/license.txt>`_
 
-* `GNU getopt – javaport 1.0.13 <http://www.urbanophile.com/arenn/hacking/download.html>`_
+* `Apache Commons CLI <https://commons.apache.org/proper/commons-cli/>`_
 
   * Javaで実装されたコマンドラインオプションを解析するためのライブラリ
-  * ライセンス: LGPL(Lesser General Public License)
+  * ライセンス: `Apache License 2.0 <http://www.apache.org/licenses/LICENSE-2.0>`_
 
 * `Apache POI <http://poi.apache.org/>`_
   
   * Microsoft Officeのドキュメントを読み込むためのライブラリ
-  * ライセンス: Apache
+  * ライセンス: `Apache License 2.0 <http://www.apache.org/licenses/LICENSE-2.0>`_
 
 * `Apache PDFBox <https://pdfbox.apache.org/>`_
 
   * Javaで実装されたPDFファイルからテキストを抽出するためのライブラリ．
-  * ライセンス: BSDライセンス
+  * ライセンス: `Apache License 2.0 <http://www.apache.org/licenses/LICENSE-2.0>`_
 
 * `Lombok <http://projectlombok.org/>`_
 
   * ライセンス： `The MIT License <http://opensource.org/licenses/mit-license.php>`_
 
-* `InfoNode Docking Windows <http://www.infonode.net/index.html?idw>`_
-
-  * Javaで実装されたSwingをベースとしたドッキングウィンドウフレームワーク．
-  * ライセンス: GPL (GNU General Public License)
-
-* `MySQL Connector/J 5.1.7 <http://dev.mysql.com/downloads/>`_
-
-  * MySQLのJDBC ドライバ
-  * ライセンス: GPL (GNU General Public License)
-
 * `SQLiteJDBC <https://bitbucket.org/xerial/sqlite-jdbc>`_
 
   * SQLiteのJDBCドライバ
-  * ライセンス: Apache License version 2.0
+  * ライセンス: `Apache License 2.0 <http://www.apache.org/licenses/LICENSE-2.0>`_
 
 * `Stanford Parser <http://nlp.stanford.edu/software/lex-parser.shtml>`_
 
   * 英語用のパーサー
-  * ライセンス： GPL (GNU General Public License)
+  * ライセンス： `GPL (GNU General Public License) <http://www.gnu.org/licenses/gpl-2.0.html>`_
 
-* `Silk Icons <http://www.famfamfam.com/>`_
+* `Material Design icons by Google <https://github.com/google/material-design-icons>`_
 
   * アイコン
-  * ライセンス: `Creative Commons Attribution 2.5 License <http://creativecommons.org/licenses/by/2.5/>`_.
+  * ライセンス: `Apache License 2.0 <http://www.apache.org/licenses/LICENSE-2.0>`_.
 
 利用しているソフトウェア
 =======================================
-DODDLE-OWLは，以下のソフトウェアを利用しています．以下の注意点に記述されていることを行いたい場合には，別途以下のソフトウェアのインストールが必要です．
+DODDLE-OWLは，以下のソフトウェアを利用している．以下の注意点に記述されていることを行いたい場合には，別途以下のソフトウェアのインストールが必要である．
 
-* JRE 8以上 （必須）
+* JRE 11以上 （必須）
 * `形態素解析システム ChaSen <http://chasen-legacy.osdn.jp/>`_ （オプション）
-* `形態素解析エンジン MeCab <http://mecab.googlecode.com/svn/trunk/mecab/doc/index.html>`_ （オプション）
-* `日本語係り受け解析器 CaboCha <http://taku910.github.io/cabocha/>`_ （オプション）
+* `形態素解析エンジン MeCab <https://github.com/taku910/mecab>`_ （オプション）
+* `日本語係り受け解析器 CaboCha <https://github.com/taku910/cabocha>`_ （オプション）
 * `ActivePerl <http://www.activestate.com/activeperl?mp=1>`_ （オプション）
 * `TermExtract <http://gensen.dl.itc.u-tokyo.ac.jp/termextract.html>`_ （オプション）
 
 .. warning::
-	* Beta6からは，ChaSen, MeCab, CaboChaは，UTF-8のみに対応しています．
+	* Beta6からは，ChaSen, MeCab, CaboChaは，UTF-8のみに対応している．
 
-	  * ChaSenでUTF-8を利用する方法は，ChaSen’s Wiki FAQを参照してください．
-	  * MeCabおよびCaboChaは，2008年11月現在の最新版は，UTF-8に対応しています．（Windows版ではインストール時に辞書の文字コードとして「UTF-8」を選択します．Unix，Macでは，configureのオプションとして「–with-charset=utf8」を指定します．）
+	  * ChaSenでUTF-8を利用する方法は，ChaSen’s Wiki FAQを参照すること．
+	  * MeCabおよびCaboChaは，2008年11月現在の最新版は，UTF-8に対応している．（Windows版ではインストール時に辞書の文字コードとして「UTF-8」を選択します．Unix，Macでは，configureのオプションとして「–with-charset=utf8」を指定する．）
 
-	* 日本語文書から複合語を抽出したい場合には，PerlとChaSen(またはMeCab)とCaboChaが必要です．
-	* 英語文書から複合語を抽出したい場合には，Perlが必要です．
-	* EDR電子化辞書から領域オントロジーを構築したい場合には，EDR電子化辞書の概念体系辞書(必須)，日本語単語辞書(必須)，英語単語辞書(オプション)，概念記述辞書(オプション)が必要です．
+	* 日本語文書から複合語を抽出したい場合には，PerlとChaSen(またはMeCab)とCaboChaが必要である．
+	* 英語文書から複合語を抽出したい場合には，Perlが必要である．
+	* EDR電子化辞書から領域オントロジーを構築したい場合には，EDR電子化辞書の概念体系辞書(必須)，日本語単語辞書(必須)，英語単語辞書(オプション)，概念記述辞書(オプション)が必要である．
 
 参照オントロジー
 ===============================
@@ -117,84 +107,63 @@ DODDLE-OWLは，以下のソフトウェアを利用しています．以下の�
 
 日本語汎用オントロジー
 -------------------------------------
-* `EDR電子化辞書 <https://www2.nict.go.jp/out-promotion/techtransfer/EDR/J_index.html>`_
+* `EDR電子化辞書 <http://www2.nict.go.jp/ipp/EDR/JPN/J_indexTop.html>`_
 * `日本語WordNet <http://compling.hss.ntu.edu.sg/wnja/>`_
-* `日本語Wikipediaオントロジー <https://osdn.jp/projects/wikipedia-ont/>`_
+* `日本語Wikipediaオントロジー <http://wikipediaontology.org/>`_
 
-インストール方法
+インストールと起動方法
 =====================================
-`ダウンロードページ <http://doddle-owl.org/download-ja.html>`_ からDODDLE-xxx.zipファイルを解凍し，適当なフォルダ（以下，インストールフォルダ）にコピーすればインストール完了です．
+
+Windows OSの場合
+--------------------------------
+1. `ダウンロードページ <http://doddle-owl.org/download-ja.html>`_ から **doddle-owl-2019.03_1_win.zip** ファイルを任意のフォルダにダウンロードして展開する．
+2. 展開したフォルダにある **bin/doddle-owl.bat** を実行する．
+
+macosの場合
+--------------------------------
+1. `ダウンロードページ <http://doddle-owl.org/download-ja.html>`_ から **doddle-owl-2019.03_1_mac.zip** ファイルを任意のフォルダにダウンロードして展開する．
+2. 展開したフォルダにある **bin/doddle-owl** を実行する．
 
 アンインストール方法
 ========================================
-インストールフォルダを削除すればアンインストール完了です．
-
-実行方法
-=====================
-DODDLE-OWL.exeまたはDODDLE-OWL.appファイルを実行する．
+* インストールしたフォルダを削除する．
 
 設定
 ===============
-各種設定は，オプションダイアログからGUIで行います．
+各種設定は，オプションダイアログからGUIで行う．
 
 オプションダイアログ: 基本タブ
 --------------------------------------------------
 
-* 言語
-
-  * enまたはjaを指定することで，英語または日本語メニューを表示することができます．
-
-* 基本接頭辞
-
-  * ユーザが定義した概念の接頭辞を設定します．
-
-* 基本URI
-
-  * オントロジー保存時のベースURIを設定します．
+言語
+  enまたはjaを指定することで，英語または日本語メニューを表示することができる．
+基本接頭辞
+  ユーザが定義した概念の接頭辞を設定する．
+基本URI
+  オントロジー保存時のベースURIを設定する．
 
 オプションダイアログ: フォルダタブ
 -----------------------------------------------------------
-
-* プロジェクトフォルダ
-
-  * 初期パス: C:/DODDLE-OWL/DODDLEProject
-  * プロジェクトファイルを保存するフォルダを設定します．プロジェクトを保存・復元する際に このフォルダが基点となります．
-      
-* ストップワードリスト
-
-  * 初期パス: C:/DODDLE-OWL/stop_word_list.txt
-  * 用語抽出時に無視する単語リストが保存されたファイルを設定します．
-
-* EDR辞書フォルダ
-
-  * 初期パス: C:/DODDLE-OWL/EDR_DIC
-  * EDR一般辞書のテキストデータをDODDLE用に変換したファイルを置いたフォルダを設定します．
-
-* EDRT辞書フォルダ
-
-  * 初期パス: C:/DODDLE-OWL/EDRT_DIC
-  * EDR専門辞書のテキストデータをDODDLE用に変換したファイルを置いたフォルダを設定します．
-
-* 日本語形態素解析器
-
-  * 初期パス: C:/Program Files/ChaSen/chasen.exe
-  * 複合語抽出モジュール言選を利用する場合に必要です．（chasen21は不可）
-
-* 日本語係り受け解析器
-
-  * 初期パス: C:/Program Files/CaboCha/bin/cabocha.exe
-  * 複合語抽出する場合に必要です．
-
-* perl.exe
-
-  * 初期パス: C:/Perl/bin/perl.exe
-  * 言選(TermExtract)を利用する場合に必要です．
-
-* 上位概念リスト
-
-  * 初期パス: C:/DODDLE-OWL/upperConceptList.txt
-  * 上位概念のリストを設定します．ある単語がEDR上の指定した概念の下位にあるかどうかを提示するために利用します．
-
+プロジェクトフォルダ
+  プロジェクトファイルを保存するフォルダを設定する．プロジェクトを保存・復元する際に このフォルダが基点となる．
+ストップワードリスト
+  用語抽出時に無視する単語リストが保存されたファイルを設定する．
+JWOフォルダ
+  日本語WikipediaオントロジーをDODDLE-OWL用に変換したファイルを置いたフォルダを設定する．
+EDR辞書フォルダ
+  EDR一般辞書のテキストデータをDODDLE-OWL用に変換したファイルを置いたフォルダを設定する．
+EDRT辞書フォルダ
+  EDR専門辞書のテキストデータをDODDLE-OWL用に変換したファイルを置いたフォルダを設定する．
+日本語形態素解析器
+  複合語抽出モジュール言選を利用する場合に必要である．（chasen21は不可）
+日本語係り受け解析器
+  複合語抽出する場合に必要である．
+perl.exe
+  言選(TermExtract)を利用する場合に必要である．
+上位概念リスト
+  上位概念のリストを設定する．ある単語がEDR上の指定した概念の下位にあるかどうかを提示するために利用する．
+複合語抽出スクリプトフォルダ
+  複合語抽出スクリプトを置くフォルダを設定する．
 
 EDR電子化辞書の利用方法
 ===========================================

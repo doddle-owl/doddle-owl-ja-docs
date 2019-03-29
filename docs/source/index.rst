@@ -12,5 +12,5 @@ DODDLE-OWL ドキュメント
    references
 
 索引
-----
+--------
 * :ref:`genindex`
