@@ -116,12 +116,12 @@ DODDLE-OWLは，以下のソフトウェアを利用している．以下の注�
 
 Windows OSの場合
 --------------------------------
-1. `ダウンロードページ <http://doddle-owl.org/download-ja.html>`_ から **doddle-owl-2019.03_1_win.zip** ファイルを任意のフォルダにダウンロードして展開する．
+1. `ダウンロードページ <http://doddle-owl.github.io/download-ja.html>`_ から **doddle-owl-2019.03_1_win.zip** ファイルを任意のフォルダにダウンロードして展開する．
 2. 展開したフォルダにある **bin/doddle-owl.bat** を実行する．
 
 macosの場合
 --------------------------------
-1. `ダウンロードページ <http://doddle-owl.org/download-ja.html>`_ から **doddle-owl-2019.03_1_mac.zip** ファイルを任意のフォルダにダウンロードして展開する．
+1. `ダウンロードページ <http://doddle-owl.github.io/download-ja.html>`_ から **doddle-owl-2019.03_1_mac.zip** ファイルを任意のフォルダにダウンロードして展開する．
 2. 展開したフォルダにある **bin/doddle-owl** を実行する．
 
 アンインストール方法
