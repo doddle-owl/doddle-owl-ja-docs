@@ -9,34 +9,29 @@
 ==================
 DODDLE-OWLを実行するためには，以下の環境が必要である．
 
-* JRE (Java Runtime Environment) 11以降
 * OS: Javaが動作可能なOS
-* CPU: Pentium4 2GHz程度
 * メモリ: 1GB以上
 * ハードディスクの空き容量: 1GB以上
 * ディスプレイ: 解像度1024×768 以上のカラーディスプレイ
-
-DODDLE-OWLの開発および動作確認は以下の環境で行っている．
-
-* JDK 11
-* OS: macOS Mojava
-* CPU: Intel Core i7 4GHz
-* メモリ: 32GB
-* ディスプレイ: 解像度1920×1200 のカラーディスプレイ
 
 利用しているライブラリ
 ====================================
 DODDLE-OWLは以下のライブラリを利用している．以下のライブラリについては，DODDLE-OWLに含まれているため別途ダウンロードする必要はない．
 
-* `Apache Jena <http://jena.apache.org/>`_
+* `FlatLaf <https://www.formdev.com/flatlaf/>`_
+
+  * Java Swingデスクトップアプリケーション向けのモダンなオープンソースのクロスプラットフォーム用ルックアンドフィール
+  * ライセンス: `Apache License 2.0 <https://www.apache.org/licenses/LICENSE-2.0>`_
+
+* `Apache Jena <https://jena.apache.org/>`_
 
   * RDF, RDFS, OWLを扱うためのライブラリ
-  * ライセンス: `Jena – License and Copyright <http://www.apache.org/licenses/LICENSE-2.0>`_
+  * ライセンス: `Apache License 2.0`_
 
 * `Kuromoji <https://github.com/atilika/kuromoji>`_
 
   * Javaで実装された形態素解析器
-  * ライセンス: `Apache License 2.0 <http://www.apache.org/licenses/LICENSE-2.0>`_
+  * ライセンス: `Apache License 2.0`_
 
 * `extJWNL <http://extjwnl.sourceforge.net/>`_
 
@@ -46,26 +41,26 @@ DODDLE-OWLは以下のライブラリを利用している．以下のライブ�
 * `Apache Commons CLI <https://commons.apache.org/proper/commons-cli/>`_
 
   * Javaで実装されたコマンドラインオプションを解析するためのライブラリ
-  * ライセンス: `Apache License 2.0 <http://www.apache.org/licenses/LICENSE-2.0>`_
+  * ライセンス: `Apache License 2.0`_
 
 * `Apache POI <http://poi.apache.org/>`_
   
   * Microsoft Officeのドキュメントを読み込むためのライブラリ
-  * ライセンス: `Apache License 2.0 <http://www.apache.org/licenses/LICENSE-2.0>`_
+  * ライセンス: `Apache License 2.0`_
 
 * `Apache PDFBox <https://pdfbox.apache.org/>`_
 
   * Javaで実装されたPDFファイルからテキストを抽出するためのライブラリ．
-  * ライセンス: `Apache License 2.0 <http://www.apache.org/licenses/LICENSE-2.0>`_
+  * ライセンス: `Apache License 2.0`_
 
 * `Lombok <http://projectlombok.org/>`_
 
   * ライセンス： `The MIT License <http://opensource.org/licenses/mit-license.php>`_
 
-* `SQLiteJDBC <https://bitbucket.org/xerial/sqlite-jdbc>`_
+* `SQLiteJDBC <https://github.com/xerial/sqlite-jdbc>`_
 
   * SQLiteのJDBCドライバ
-  * ライセンス: `Apache License 2.0 <http://www.apache.org/licenses/LICENSE-2.0>`_
+  * ライセンス: `Apache License 2.0`_
 
 * `Stanford Parser <http://nlp.stanford.edu/software/lex-parser.shtml>`_
 
@@ -75,17 +70,15 @@ DODDLE-OWLは以下のライブラリを利用している．以下のライブ�
 * `Material Design icons by Google <https://github.com/google/material-design-icons>`_
 
   * アイコン
-  * ライセンス: `Apache License 2.0 <http://www.apache.org/licenses/LICENSE-2.0>`_.
+  * ライセンス: `Apache License 2.0`_.
 
 利用しているソフトウェア
 =======================================
 DODDLE-OWLは，以下のソフトウェアを利用している．以下の注意点に記述されていることを行いたい場合には，別途以下のソフトウェアのインストールが必要である．
 
-* JRE 11以上 （必須）
-* `形態素解析システム ChaSen <http://chasen-legacy.osdn.jp/>`_ （オプション）
+* JRE 25以上（組み込まれている）
 * `形態素解析エンジン MeCab <https://github.com/taku910/mecab>`_ （オプション）
 * `日本語係り受け解析器 CaboCha <https://github.com/taku910/cabocha>`_ （オプション）
-* `ActivePerl <http://www.activestate.com/activeperl?mp=1>`_ （オプション）
 * `TermExtract <http://gensen.dl.itc.u-tokyo.ac.jp/termextract.html>`_ （オプション）
 
 .. warning::
@@ -108,25 +101,28 @@ DODDLE-OWLは，以下のソフトウェアを利用している．以下の注�
 日本語汎用オントロジー
 -------------------------------------
 * `EDR電子化辞書 <http://www2.nict.go.jp/ipp/EDR/JPN/J_indexTop.html>`_
-* `日本語WordNet <http://compling.hss.ntu.edu.sg/wnja/>`_
-* `日本語Wikipediaオントロジー <http://wikipediaontology.org/>`_
+* `日本語WordNet <https://bond-lab.github.io/wnja/>`_
 
 インストールと起動方法
 =====================================
 
-Windows OSの場合
+Windows 場合
 --------------------------------
-1. `ダウンロードページ <http://doddle-owl.github.io/download-ja.html>`_ から **doddle-owl-2019.03_1_win.zip** ファイルを任意のフォルダにダウンロードして展開する．
-2. 展開したフォルダにある **bin/doddle-owl.bat** を実行する．
+`ダウンロードページ <https://github.com/doddle-owl/doddle-owl/releases>`_ から **doddle-owl-26.5.1.msi** ファイルを任意のフォルダにダウンロードして実行する．
 
-macosの場合
+macOS の場合
 --------------------------------
-1. `ダウンロードページ <http://doddle-owl.github.io/download-ja.html>`_ から **doddle-owl-2019.03_1_mac.zip** ファイルを任意のフォルダにダウンロードして展開する．
-2. 展開したフォルダにある **bin/doddle-owl** を実行する．
+`ダウンロードページ <https://github.com/doddle-owl/doddle-owl/releases>`_ から **doddle-owl-26．5．1.dmg** ファイルを実行し，「DODDLE-OWL.app」を任意のフォルダにコピーして実行する．
 
 アンインストール方法
 ========================================
-* インストールしたフォルダを削除する．
+Windows 場合
+--------------------------------
+「設定」->「アプリ」->「インストール済みアプリ」から「DODDLE-OWL」を選択してアンインストールする．
+
+macOS の場合
+--------------------------------
+「DODDLE-OWL.app」を削除する．
 
 設定
 ===============
@@ -167,10 +163,10 @@ perl.exe
 
 EDR電子化辞書の利用方法
 ===========================================
-DODDLE-OWLでEDR電子化辞書を汎用オントロジーとして参照するためには，EDR電子化辞書のテキストデータをDODDLE-OWLで参照する形式に変換する必要があります．
-以下では，その変換手順について説明します．
+DODDLE-OWLでEDR電子化辞書を汎用オントロジーとして参照するためには，EDR電子化辞書のテキストデータをDODDLE-OWLで参照する形式に変換する必要がある．
+以下では，その変換手順について説明する．
 
-CPU: Intel Core i7 4GHz，メモリ: 32GBのiMacを用いてEDR一般辞書とEDR専門辞書をDODDLE-OWLで参照する形式に変換するためにかかる時間は以下の通りです．
+CPU: Intel Core i7 4GHz，メモリ: 32GBのiMacを用いてEDR一般辞書とEDR専門辞書をDODDLE-OWLで参照する形式に変換するためにかかる時間は以下の通りである．
 
 * EDR一般辞書: 約3分
 * EDR専門辞書: 約40秒
