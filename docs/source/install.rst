@@ -112,7 +112,7 @@ Windows 場合
 
 macOS の場合
 --------------------------------
-`ダウンロードページ <https://github.com/doddle-owl/doddle-owl/releases>`_ から **doddle-owl-26．5．1.dmg** ファイルを実行し，「DODDLE-OWL.app」を任意のフォルダにコピーして実行する．
+`ダウンロードページ <https://github.com/doddle-owl/doddle-owl/releases>`_ から **doddle-owl-26.5.1.dmg** ファイルを実行し，「DODDLE-OWL.app」を任意のフォルダにコピーして実行する．
 
 アンインストール方法
 ========================================
