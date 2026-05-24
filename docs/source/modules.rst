@@ -18,7 +18,7 @@ DODDLE-OWL は，一つ以上の領域における専門文書の存在を前提
 
 .. _system_flow:
 .. figure:: figures/system-flow.svg
-   :scale: 50 %
+   :scale: 80 %
    :alt: DODDLE-OWLのシステム構成
    :align: center
 
@@ -96,29 +96,6 @@ Swoogle は，オントロジーを検索するための19 種類のREST 形式�
 
    Swoogleを用いた既存オントロジーの獲得およびランキング
 
-表1: OWL 基本語彙，SKOS, WordNet RDF/OWL におけるオントロジーの要素を特定するクラスおよびプロパティ一覧   
-
-=====================  =============================================================
-オントロジーの要素     オントロジーの要素を特定するクラスおよびプロパティ一覧
-=====================  =============================================================
-概念                   | rdfs:Class, owl:Class, rdf:Property, owl:ObjectProperty, etc
-                       | skos:Concept
-                       | wn20schema:WordSense, wn20schema:NounWordSense, etc
-概念の見出し           | rdfs:label
-                       | skos:prefLabel, skos:altLabel, skos:hiddenLabel
-                       | wn20schema:lexicalForm
-概念の説明             | rdfs:comment
-                       | skos:definition
-                       | wn20schema:gloss
-階層関係               | rdfs:subClassOf, rdfs:subPropertyOf
-                       | skos:broader, skos:narrower
-                       | wn20schema:hypernymOf, wn20schema:hyponymOf
-その他の関係           | rdfs:domain, rdfs:range
-                       | skos:related
-                       | wn20schema:antonymOf, wn20schema:partMeronymOf, etc
-=====================  =============================================================
-
-
 既存オントロジーからの要素抽出
 ----------------------------------------------------
 OWLオントロジーを参照オントロジーとして領域オントロジー構築支援で利用するためには，オントロジー構築支援に利用可能な要素をOWLオントロジーから抽出する必要がある．DODDLE-OWLでは，領域オントロジーにおける階層関係およびその他の関係の定義を支援する．概念関係およびその他の関係を定義するために必要なOWLオントロジーの要素は，概念（クラスおよびプロパティ），概念の見出し，概念の説明，階層関係，その他の関係である．
@@ -133,7 +110,7 @@ Swoogle では，RDFS，DAML，OWLが提供する基本的なクラスおよび�
 
 Swoogle が扱う範囲のクラスやプロパティのみをOWL オントロジーから抽出する場合には，Swoogle の定義に従ってオントロジーの要素を抽出すればよい．一方で，それ以外の形式で定義された汎用オントロジーやシソーラスも存在する．[Koide06]_ では，WordNetおよびEDR のOWL化について検討しており，それらはSwoogle で定義されているクラスやプロパティとは構造が異なっている．:numref:`label_extraction` に，OWL 基本語彙，SKOS (Simple Knowledge Organisation System) [Miles05]_ ，WordNet RDF/OWLにおける「概念の見出し」の表現方法を示す．
 
-[Nakayama06]_ では，Wikipedia に対してWeb マイニングを適用する手法として Wikipediaマイニングを提案し，シソーラス辞書を構築している (wikipedia-lab)．構築されたWikipedia シソーラスを表現するための語彙としてSKOS を用いている．SKOS では，概念を表すクラスとしてskos:Concept，上位概念を表すプロパティとしてskos:broader などの語彙が定義されており，OWL基本語彙とは異なる．表1 にOWL基本語彙，SKOS, WordNet RDF/OWLにおけるオントロジーの要素を特定するクラスおよびプロパティ一覧を示す．
+[Nakayama06]_ では，Wikipedia に対してWeb マイニングを適用する手法として Wikipediaマイニングを提案し，シソーラス辞書を構築している (wikipedia-lab)．構築されたWikipedia シソーラスを表現するための語彙としてSKOS を用いている．SKOS では，概念を表すクラスとしてskos:Concept，上位概念を表すプロパティとしてskos:broader などの語彙が定義されており，OWL基本語彙とは異なる．:numref:`class_and_property_identifying_ontology_elements` にOWL基本語彙，SKOS, WordNet RDF/OWLにおけるオントロジーの要素を特定するクラスおよびプロパティ一覧を示す．
 
 DODDLE-OWLでは，多様な形式のオントロジーからオントロジー要素を抽出するために，クラス抽出テンプレート，プロパティ抽出テンプレート，見出しおよび説明抽出テンプレート，階層関係抽出テンプレート，その他の関係抽出テンプレートの5種類のテンプレートを，RDF クエリー言語SPARQL [hommeaux08]_ を用いて記述し，OWL オントロジーと対応づけている．
 
@@ -144,6 +121,35 @@ DODDLE-OWLでは，多様な形式のオントロジーからオントロジー�
    :align: center
 
    OWL基本語彙，SKOS，WordNet RDF/OWLスキーマにおける“概念の見出し”の表現方法
+
+
+.. _class_and_property_identifying_ontology_elements:
+.. list-table:: オントロジーの要素を特定するクラスおよびプロパティ一覧  
+   :header-rows: 1
+
+   * - オントロジーの要素
+     - オントロジーの要素を特定するクラスおよびプロパティ一覧
+   * - 概念
+     - | ``rdfs:Class``, ``owl:Class``, ``rdf:Property``, ``owl:ObjectProperty``, etc.
+       | ``skos:Concept``
+       | ``wn20schema:WordSense``, ``wn20schema:NounWordSense``, etc.
+   * - 概念の見出し
+     - | ``rdfs:label``
+       | ``skos:prefLabel``, ``skos:altLabel``, ``skos:hiddenLabel``
+       | ``wn20schema:lexicalForm``
+   * - 概念の説明
+     - | ``rdfs:comment``
+       | ``skos:definition``
+       | ``wn20schema:gloss``
+   * - 階層関係
+     - | ``rdfs:subClassOf``, ``rdfs:subPropertyOf``
+       | ``skos:broader``, ``skos:narrower``
+       | ``wn20schema:hypernymOf``, ``wn20schema:hyponymOf``
+   * - その他の関係
+     - | ``rdfs:domain``, ``rdfs:range``
+       | ``skos:related``
+       | ``wn20schema:antonymOf``, ``wn20schema:partMeronymOf``, etc.
+
 
 
 既存オントロジーのランキング
