@@ -17,8 +17,8 @@ DODDLE-OWL は，一つ以上の領域における専門文書の存在を前提
 
 
 .. _system_flow:
-.. figure:: figures/system-flow.svg
-   :scale: 80 %
+.. figure:: figures/system-flow.*
+   :width: 100 %
    :alt: DODDLE-OWLのシステム構成
    :align: center
 
@@ -89,8 +89,8 @@ Swoogle は，オントロジーを検索するための19 種類のREST 形式�
 手順5 の詳細については「既存オントロジーからの要素抽出」で述べる．手順7 の詳細については「既存オントロジーのランキング」で述べる．
 
 .. _ontology_ranking:
-.. figure:: figures/procedure_flow_of_acquiring_and_ranking_existing_ontologies.png
-   :scale: 80 %
+.. figure:: figures/procedure_flow_of_acquiring_and_ranking_existing_ontologies.*
+   :width: 100 %
    :alt:  Swoogleを用いた既存オントロジーの獲得およびランキング
    :align: center
 
@@ -116,7 +116,7 @@ DODDLE-OWLでは，多様な形式のオントロジーからオントロジー�
 
 .. _label_extraction:
 .. figure:: figures/label_extraction.png
-   :scale: 80 %
+   :width: 100 %
    :alt: OWL基本語彙，SKOS，WordNet RDF/OWLスキーマにおける“概念の見出し”の表現方法
    :align: center
 
@@ -174,7 +174,7 @@ DODDLE-OWLでは，階層関係構築支援のために，参照オントロジ�
 
 .. _input_module:
 .. figure:: figures/input-module.png
-   :scale: 50 %
+   :width: 100 %
    :alt:  入力モジュールのシステムフロー
    :align: center
 
@@ -242,7 +242,7 @@ DODDLE-OWLでは，階層関係構築支援のために，参照オントロジ�
 
 .. _process_of_perfectly_matched:
 .. figure:: figures/process_of_perfectly_matched_concept_tree_construction.png
-   :scale: 80 %
+   :width: 100 %
    :alt: 完全照合概念の階層構築工程
    :align: center
 
@@ -261,7 +261,7 @@ SINは，一つ以上の入力概念ノードを子ノードとして持つノ�
 
 .. _process_of_partially_matched:
 .. figure:: figures/process_of_partially_matched_concept_tree_construction.png
-   :scale: 80 %
+   :width: 100 %
    :alt: 部分照合概念の階層構築工程
    :align: center
 
@@ -291,7 +291,7 @@ WordSpaceから得られる共起情報に基づき，入力文書から文脈�
 
 .. _wordspace:
 .. figure:: figures/extraction_of_related_concept_pairs_using_WordSpace.png
-   :scale: 80 %
+   :width: 100 %
    :alt: 文脈類似概念対の獲得手順
    :align: center
 
@@ -401,7 +401,7 @@ Apriori アルゴリズムでは，要素数の少ないアイテム集合から
 
 .. _apriori:
 .. figure:: figures/apriori.png
-   :scale: 80 %
+   :width: 100 %
    :alt: Apriori アルゴリズムによる多頻度アイテム集合抽出の例
    :align: center
 
@@ -439,7 +439,7 @@ EDR概念記述辞書を用いたプロパティ階層の構築およびその�
 
 .. _process-tree-refinement:
 .. figure:: figures/process_of_tree_refinement.png
-   :scale: 80 %
+   :width: 100 %
    :alt:  概念階層洗練工程
    :align: center
 
@@ -463,7 +463,7 @@ STMの定義
 
 .. _matched-result-analysis:
 .. figure:: figures/matched_result_analysis.png
-   :scale: 80 %
+   :width: 100 %
    :alt: 戦略1：照合結果分析
    :align: center
            
@@ -482,7 +482,7 @@ STMの定義
 
 .. _trimmed-result-analysis:
 .. figure:: figures/trimmed_result_analysis.png
-   :scale: 80 %
+   :width: 100 %
    :alt: 戦略2：剪定結果分析
    :align: center
            
@@ -497,7 +497,7 @@ WordNet やEDR 電子化辞書などの汎用オントロジーでは，階層�
 
 .. _remove-multiple-inheritance:
 .. figure:: figures/remove_multiple_inheritance.png
-   :scale: 80 %
+   :width: 100 %
    :alt: 戦略3：多重継承の除去
    :align: center
            
@@ -521,7 +521,7 @@ DODDLE-OWLによって構築される領域オントロジーは，階層関係�
 
 .. _translation_module:
 .. figure:: figures/translation_module.png
-   :scale: 80 %
+   :width: 100 %
    :alt: 変換モジュールによる領域オントロジーのOWL形式への変換例
    :align: center
 
