@@ -115,7 +115,7 @@ Swoogle が扱う範囲のクラスやプロパティのみをOWL オントロ�
 DODDLE-OWLでは，多様な形式のオントロジーからオントロジー要素を抽出するために，クラス抽出テンプレート，プロパティ抽出テンプレート，見出しおよび説明抽出テンプレート，階層関係抽出テンプレート，その他の関係抽出テンプレートの5種類のテンプレートを，RDF クエリー言語SPARQL [hommeaux08]_ を用いて記述し，OWL オントロジーと対応づけている．
 
 .. _label_extraction:
-.. figure:: figures/label_extraction.png
+.. figure:: figures/label_extraction.*
    :width: 100 %
    :alt: OWL基本語彙，SKOS，WordNet RDF/OWLスキーマにおける“概念の見出し”の表現方法
    :align: center
@@ -173,7 +173,7 @@ DODDLE-OWLでは，階層関係構築支援のために，参照オントロジ�
 入力モジュールは，領域専門文書集合を入力として受け取り，参照オントロジーを参照して入力概念集合を出力する．入力モジュールは，入力文書選択モジュール，入力語選択モジュール，入力概念選択モジュールから構成される．:numref:`input_module` に，入力モジュールのシステムフローを示す．以下では，各モジュールについて説明する．
 
 .. _input_module:
-.. figure:: figures/input-module.png
+.. figure:: figures/input-module.*
    :width: 100 %
    :alt:  入力モジュールのシステムフロー
    :align: center
@@ -240,17 +240,17 @@ DODDLE-OWLでは，階層関係構築支援のために，参照オントロジ�
 完全照合概念の階層構築
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. _process_of_perfectly_matched:
-.. figure:: figures/process_of_perfectly_matched_concept_tree_construction.png
+.. _process_of_exactly_matched:
+.. figure:: figures/process_of_exactly_matched_concept_hierarchy_construction.*
    :width: 100 %
    :alt: 完全照合概念の階層構築工程
    :align: center
 
    完全照合概念の階層構築工程
 
-:numref:`process_of_perfectly_matched` に完全照合概念の階層構築工程を示す．本工程では，参照オントロジーから，入力モジュールによって獲得した完全照合概念を末端ノードとし，ルート概念に至るまでのパスを抽出して合成する．この結果得られる概念階層をベストマッチモデルと呼ぶ．
+:numref:`process_of_exactly_matched` に完全照合概念の階層構築工程を示す．本工程では，参照オントロジーから，入力モジュールによって獲得した完全照合概念を末端ノードとし，ルート概念に至るまでのパスを抽出して合成する．この結果得られる概念階層をベストマッチモデルと呼ぶ．
 
-:numref:`process_of_perfectly_matched` のベストマッチモデルは，3種類のノードから構成される．具体的には，1重線で囲まれた入力概念ノード，2重線で囲まれたSIN（Salient Internal Nodes），および点線で囲まれた不要中間ノードである．入力概念ノードは，ユーザが選択した入力語に対応する参照オントロジー中の概念であり，領域オントロジーにおいて必須の概念である．参照オントロジーから抽出されたノードのうち，入力概念ノード以外のノードは，SINまたは不要中間ノードに分類される．
+:numref:`process_of_exactly_matched` のベストマッチモデルは，3種類のノードから構成される．具体的には，1重線で囲まれた入力概念ノード，2重線で囲まれたSIN（Salient Internal Nodes），および点線で囲まれた不要中間ノードである．入力概念ノードは，ユーザが選択した入力語に対応する参照オントロジー中の概念であり，領域オントロジーにおいて必須の概念である．参照オントロジーから抽出されたノードのうち，入力概念ノード以外のノードは，SINまたは不要中間ノードに分類される．
 
 SINは，一つ以上の入力概念ノードを子ノードとして持つノードである．SINは，各入力概念間の位相関係，すなわち祖先関係，親子関係，および兄弟関係を保持する役割を担う．一方，不要中間ノードは，入力概念ノードを子ノードとして持たないノードである．不要中間ノードは，各入力概念間の位相関係の保持に寄与しないため，階層構築モジュールでは，階層構築に不要な概念であると判断し，ベストマッチモデルから削除する．
 
@@ -260,7 +260,7 @@ SINは，一つ以上の入力概念ノードを子ノードとして持つノ�
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. _process_of_partially_matched:
-.. figure:: figures/process_of_partially_matched_concept_tree_construction.png
+.. figure:: figures/process_of_partially_matched_concept_hierarchy_construction.*
    :width: 100 %
    :alt: 部分照合概念の階層構築工程
    :align: center
@@ -400,7 +400,7 @@ Apriori アルゴリズムでは，要素数の少ないアイテム集合から
 続いて， :math:`F_1` から候補集合 :math:`C_2` を生成する．この場合， :math:`C_2` の各要素について，要素数1のすべての部分集合が多頻度アイテム集合であるため，候補の削除は行われない．その後， :math:`T` を検索して， :math:`C_2` の支持度を計算し，:math:`F_2` を得る．次に， :math:`F_2` から :math:`C_3` を生成する．この際， {1,2,3}および{1,3,5}といったアイテム集合も候補として生成されるが，これらの部分集合である{1,2}および{1,5}はいずれも多頻度アイテム集合ではない．したがって，{1,2,3}および{1,3,5}も多頻度アイテム集合ではなく， :math:`C_3` から削除される．その結果， :math:`C_3` は{2,3,5}のみとなる． :math:`T` を検索すると，{2,3,5}の出現数派2であり，支持度は0.50以上となる．よって， :math:`F_3` は{2,3,5}である．{2,3,5}からは新たに候補集合 :math:`C_4` を生成できないため，ここで処理は終了する．
 
 .. _apriori:
-.. figure:: figures/apriori.png
+.. figure:: figures/apriori.*
    :width: 100 %
    :alt: Apriori アルゴリズムによる多頻度アイテム集合抽出の例
    :align: center
@@ -435,10 +435,10 @@ EDR概念記述辞書を用いたプロパティ階層の構築およびその�
 ------------------
 参照オントロジー，特に汎用オントロジーから半自動的に構築された初期概念階層には，一般的な階層関係が定義されている．このため，ユーザは概念変動，すなわち対象領域の変化に伴う概念の意味変化を考慮しながら，初期概念階層を特定の領域に適合させる必要がある．
 
-概念変動を管理するために，階層洗練モジュールでは三つの戦略を適用する．具体的には，戦略1として照合結果分析，戦略2として剪定結果分析，戦略3として多重継承の除去を用いる．:numref:`process-tree-refinement` に，概念階層洗練工程を示す．戦略1 は入力概念集合と汎用オントロジーとの照合結果の観点から概念変動を同定する．戦略2は，剪定結果の観点から概念変動を同定する．戦略3は，多重継承の発生に基づいて概念変動を同定する．以下では，それぞれの戦略の詳細を説明する．
+概念変動を管理するために，階層洗練モジュールでは三つの戦略を適用する．具体的には，戦略1として照合結果分析，戦略2として剪定結果分析，戦略3として多重継承の除去を用いる．:numref:`process-hierarchy-refinement` に，概念階層洗練工程を示す．戦略1 は入力概念集合と汎用オントロジーとの照合結果の観点から概念変動を同定する．戦略2は，剪定結果の観点から概念変動を同定する．戦略3は，多重継承の発生に基づいて概念変動を同定する．以下では，それぞれの戦略の詳細を説明する．
 
-.. _process-tree-refinement:
-.. figure:: figures/process_of_tree_refinement.png
+.. _process-hierarchy-refinement:
+.. figure:: figures/process_of_hierarchy_refinement.*
    :width: 100 %
    :alt:  概念階層洗練工程
    :align: center
@@ -462,8 +462,8 @@ STMの定義
 :numref:`matched-result-analysis` にPAB およびSTM の例を示す．実線で囲まれた部分木がPABであり，破線で囲まれた部分木がSTMである．ユーザは，STMを移動することで概念階層初期モデルを洗練し，領域概念階層を構築する．STM の移動先はユーザが決定する．移動の必要がないと判断した場合には，STM を移動しない．また，移動時にユーザが不必要であると判断したSTM のルートノードは，削除してもよい．戦略1 は，照合結果の分析に基づいて得られた戦略であるため，照合結果分析(Matched Result Analysis: MRA) と呼ぶ．
 
 .. _matched-result-analysis:
-.. figure:: figures/matched_result_analysis.png
-   :width: 100 %
+.. figure:: figures/matched_result_analysis.*
+   :width: 70 %
    :alt: 戦略1：照合結果分析
    :align: center
            
@@ -481,8 +481,8 @@ STMの定義
 剪定結果分析の適用例を:numref:`trimmed-result-analysis` に示す．:numref:`trimmed-result-analysis` に示すベストマッチモデルを剪定した結果，概念Aと概念D間の領域がすべて削除された．この変化は，概念Aの分類属性が，対象とする問題領域では異なる形で分化に利用されている可能性を示しており，概念変動が発生していると推定される．本例では，対象とする問題領域において，概念Dは概念Aの下位概念ではなく，概念C の下位概念として，概念階層が再構成されている．
 
 .. _trimmed-result-analysis:
-.. figure:: figures/trimmed_result_analysis.png
-   :width: 100 %
+.. figure:: figures/trimmed_result_analysis.*
+   :width: 70 %
    :alt: 戦略2：剪定結果分析
    :align: center
            
@@ -496,8 +496,8 @@ WordNet やEDR 電子化辞書などの汎用オントロジーでは，階層�
 :numref:`remove-multiple-inheritance` に，多重継承の除去の例を示す． :numref:`remove-multiple-inheritance` では，汎用オントロジーにおいて，概念Dが概念A，概念B，概念C の三つの概念を上位概念として多重継承している．この例では，概念A および概念C を上位概念として不要であると判断し，ユーザがこれらの継承関係を除去している．
 
 .. _remove-multiple-inheritance:
-.. figure:: figures/remove_multiple_inheritance.png
-   :width: 100 %
+.. figure:: figures/remove_multiple_inheritance.*
+   :width: 60 %
    :alt: 戦略3：多重継承の除去
    :align: center
            
@@ -520,7 +520,7 @@ DODDLE-OWLによって構築される領域オントロジーは，階層関係�
 また，DODDLE-OWL では概念の見出しを rdfs:label プロパティ，概念の説明を rdfs:comment プロパティ，概念の表示見出しを skos:prefLabel プロパティによって定義する．概念の表示見出しとは，概念に複数の見出しが定義されている場合に，概念階層を表示する際に優先的に表示される見出しを指す．
 
 .. _translation_module:
-.. figure:: figures/translation_module.png
+.. figure:: figures/translation_module.*
    :width: 100 %
    :alt: 変換モジュールによる領域オントロジーのOWL形式への変換例
    :align: center
